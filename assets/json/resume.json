@@ -35,33 +35,19 @@
       "startDate": "2021-09-23",
       "endDate": "current",
       "summary": "Create, maintain, and improve the Help Center and Knowledgebase for a SaaS business and software.",
-      "highlights": [
-        "Help Center",
-        "Knowledgebase",
-        "SaaS",
-        "Docs-as-Code"
-      ]
+      "highlights": ["Help Center", "Knowledgebase", "SaaS", "Docs-as-Code"]
     }
   ],
   "skills": [
     {
       "name": "Web Development",
       "level": "Intermediate",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ]
+      "keywords": ["HTML", "CSS", "JavaScript"]
     },
     {
       "name": "GitHub",
       "level": "Intermediate",
-      "keywords": [
-        "Git",
-        "Automation",
-        "CI/CD",
-        "Collaboration"
-      ]
+      "keywords": ["Git", "Automation", "CI/CD", "Collaboration"]
     }
   ],
   "languages": [
@@ -73,15 +59,7 @@
   "interests": [
     {
       "name": "Homelab",
-      "keywords": [
-        "Self-hosted",
-        "Services",
-        "Networking",
-        "Linux",
-        "Administration",
-        "Docker",
-        "Ansible"
-      ]
+      "keywords": ["Self-hosted", "Services", "Networking", "Linux", "Administration", "Docker", "Ansible"]
     }
   ],
   "references": [
@@ -96,9 +74,7 @@
       "startDate": "2024-01-01",
       "endDate": "ongoing",
       "description": "ClickFunnels Help Center articles.",
-      "highlights": [
-        "Implemented and trained others from scratch."
-      ],
+      "highlights": ["Implemented and trained others from scratch."],
       "url": "https://www.github.com/mtthwnestor/cf2-docs"
     }
   ]

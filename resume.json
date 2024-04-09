@@ -3,7 +3,7 @@
   "basics": {
     "name": "Matthew Nestor",
     "label": "Technical Lead",
-    "image": "",
+    "image": "photo.jpg",
     "email": "mtthwnestor@gmail.com",
     "phone": "253-632-0664",
     "url": "https://mtthwnestor.github.io",
@@ -99,22 +99,17 @@
     {
       "name": "Jekyll",
       "level": "Intermediate",
-      "keywords": ["Markdown", "Liquid", "HTML", "CSS", "JavaScript", "YAML"]
+      "keywords": ["Markdown", "Liquid", "HTML", "CSS", "JavaScript", "YAML", "Docs-As-Code"]
     },
     {
       "name": "GitHub",
       "level": "Intermediate",
-      "keywords": ["Git", "Automation", "CI/CD", "Testing", "Collaboration"]
-    },
-    {
-      "name": "Software as a Service (SaaS)",
-      "level": "Master",
-      "keywords": []
+      "keywords": ["Git", "Automation", "CI/CD", "Collaboration"]
     },
     {
       "name": "Web Development",
       "level": "Intermediate",
-      "keywords": ["HTML", "CSS", "JavaScript", "Liquid"]
+      "keywords": ["Markdown", "Liquid", "HTML", "CSS", "JavaScript"]
     },
     {
       "name": "Application Programming Interfaces (API)",
@@ -132,29 +127,9 @@
       "keywords": []
     },
     {
-      "name": "Technical Support",
-      "level": "Master",
-      "keywords": []
-    },
-    {
-      "name": "Domain Name System (DNS)",
-      "level": "Intermediate",
-      "keywords": []
-    },
-    {
-      "name": "Linux",
-      "level": "Intermediate",
-      "keywords": []
-    },
-    {
       "name": "Documentation",
       "level": "Master",
-      "keywords": []
-    },
-    {
-      "name": "Git",
-      "level": "Intermediate",
-      "keywords": []
+      "keywords": ["Diataxis", "Docs-As-Code"]
     },
     {
       "name": "Video Editing",
@@ -167,22 +142,7 @@
       "keywords": []
     },
     {
-      "name": "Network Administration",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "System Administration",
-      "level": "",
-      "keywords": []
-    },
-    {
       "name": "Communication",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Docker",
       "level": "",
       "keywords": []
     },
@@ -190,11 +150,6 @@
       "name": "DevOps",
       "level": "Intermediate",
       "keywords": ["Docker", "make", "Bash", "GitHub", "YAML"]
-    },
-    {
-      "name": "Virtualization",
-      "level": "",
-      "keywords": []
     },
     {
       "name": "JavaScript",
@@ -229,8 +184,8 @@
     {
       "name": "cf2-docs",
       "startDate": "2024-01-01",
-      "endDate": "ongoing",
-      "description": "ClickFunnels Help Center articles.",
+      "endDate": "",
+      "description": "ClickFunnels Help Center content.",
       "highlights": ["Implemented and trained others from scratch."],
       "url": "https://www.github.com/mtthwnestor/cf2-docs"
     }

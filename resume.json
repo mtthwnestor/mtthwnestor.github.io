@@ -216,7 +216,7 @@
   "interests": [
     {
       "name": "Homelab",
-      "keywords": ["Self-hosted", "Services", "Networking", "Linux", "Administration", "Docker", "Ansible"]
+      "keywords": ["Self-hosted", "Networking", "Linux", "Docker", "Ansible"]
     }
   ],
   "references": [

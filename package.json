@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "jsonresume-theme-even": "^0.22.0",
+    "resumed": "^3.0.1"
+  }
+}

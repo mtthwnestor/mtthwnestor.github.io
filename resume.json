@@ -2,21 +2,29 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Matthew Nestor",
-    "label": "none",
+    "label": "Technical Lead",
     "image": "",
     "email": "mtthwnestor@gmail.com",
-    "phone": "2536320664",
-    "url": "",
-    "summary": "",
+    "phone": "253-632-0664",
+    "url": "https://mtthwnestor.github.io",
+    "summary": "Matthew is a highly detailed technical writer and programmer.",
     "location": {
+      "address": "1128 W Michigan Ave",
+      "postalCode": "MI 48915",
+      "city": "Lansing",
       "countryCode": "US",
-      "address": "United States"
+      "region": "Michigan"
     },
     "profiles": [
       {
         "network": "LinkedIn",
         "username": "mtthwnestor",
         "url": "https://www.linkedin.com/in/mtthwnestor/"
+      },
+      {
+        "network": "GitHub",
+        "username": "mtthwnestor",
+        "url": "https://github.com/mtthwnestor"
       }
     ]
   },
@@ -26,15 +34,15 @@
       "position": "Technical Writer",
       "startDate": "2022-07-31",
       "endDate": "",
-      "highlights": [],
-      "summary": "• Document a new large and complex SaaS platform, creating written help center articles and instructional videos to improve customer education and support.\n• Work closely with developers to document new features, ensuring the team is up-to-date on the latest platform capabilities.\n• Serve as subject matter expert (SME) for numerous topics, helping to streamline internal processes and improve communication within the team.",
+      "highlights": ["Help Center", "Knowledge Base", "SaaS", "Docs-as-Code"],
+      "summary": "Create, maintain, and improve the Help Center and Knowledgebase for a SaaS business and software.",
       "url": "https://www.linkedin.com/company/7793713",
       "location": "Remote"
     },
     {
       "name": "ClickFunnels",
       "position": "Technical Support Specialist",
-      "startDate": "2021-09-30",
+      "startDate": "2021-09-23",
       "endDate": "2022-10-31",
       "highlights": [],
       "summary": null,
@@ -90,126 +98,71 @@
   "skills": [
     {
       "name": "Jekyll",
-      "level": "",
-      "keywords": []
+      "level": "Intermediate",
+      "keywords": ["Markdown", "Liquid", "HTML", "CSS", "JavaScript", "YAML"]
     },
     {
       "name": "GitHub",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "English",
-      "level": "",
-      "keywords": []
+      "level": "Intermediate",
+      "keywords": ["Git", "Automation", "CI/CD", "Testing", "Collaboration"]
     },
     {
       "name": "Software as a Service (SaaS)",
-      "level": "",
+      "level": "Master",
       "keywords": []
     },
     {
-      "name": "HTML/CSS",
-      "level": "",
-      "keywords": []
+      "name": "Web Development",
+      "level": "Intermediate",
+      "keywords": ["HTML", "CSS", "JavaScript", "Liquid"]
     },
     {
       "name": "Application Programming Interfaces (API)",
-      "level": "",
-      "keywords": []
+      "level": "Intermediate",
+      "keywords": ["JSON", "Python"]
     },
     {
       "name": "Python (Programming Language)",
-      "level": "",
+      "level": "Intermediate",
       "keywords": []
     },
     {
-      "name": "Windows 10",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "JSON",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Excellent troubleshooting and problem solving.",
-      "level": "",
+      "name": "Troubleshooting and problem solving",
+      "level": "Master",
       "keywords": []
     },
     {
       "name": "Technical Support",
-      "level": "",
+      "level": "Master",
       "keywords": []
     },
     {
       "name": "Domain Name System (DNS)",
-      "level": "",
+      "level": "Intermediate",
       "keywords": []
     },
     {
-      "name": "Electronics",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Ubuntu",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Virtual Private Network (VPN)",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Analytical Skills",
-      "level": "",
+      "name": "Linux",
+      "level": "Intermediate",
       "keywords": []
     },
     {
       "name": "Documentation",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Markdown",
-      "level": "",
+      "level": "Master",
       "keywords": []
     },
     {
       "name": "Git",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Writing",
-      "level": "",
+      "level": "Intermediate",
       "keywords": []
     },
     {
       "name": "Video Editing",
       "level": "",
-      "keywords": []
+      "keywords": ["Adobe", "Premiere", "Camtasia", "SnagIt", "ffmpeg"]
     },
     {
       "name": "Technical Writing",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Linux Server",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Self Learning",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Technical Documentation",
       "level": "",
       "keywords": []
     },
@@ -229,39 +182,14 @@
       "keywords": []
     },
     {
-      "name": "HTML",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Network configuration and troubleshooting.",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Data Entry",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Online Help",
-      "level": "",
-      "keywords": []
-    },
-    {
       "name": "Docker",
       "level": "",
       "keywords": []
     },
     {
-      "name": "Powershell",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Computer hardware installation and troubleshooting.",
-      "level": "",
-      "keywords": []
+      "name": "DevOps",
+      "level": "Intermediate",
+      "keywords": ["Docker", "make", "Bash", "GitHub", "YAML"]
     },
     {
       "name": "Virtualization",
@@ -274,62 +202,7 @@
       "keywords": []
     },
     {
-      "name": "Adaptation",
-      "level": "",
-      "keywords": []
-    },
-    {
       "name": "Bash",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Regulatory Compliance",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Windows and Linux installation, configuration, and troubleshooting.",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Linux",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Office 365 Administration",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Cascading Style Sheets (CSS)",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "High Level Of Accuracy",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Computer Hardware Installation",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Educational Games",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Technical Understanding",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Software Documentation",
       "level": "",
       "keywords": []
     }
@@ -340,9 +213,28 @@
       "fluency": "Native Speaker"
     }
   ],
-  "interests": [],
-  "references": [],
-  "projects": [],
+  "interests": [
+    {
+      "name": "Homelab",
+      "keywords": ["Self-hosted", "Services", "Networking", "Linux", "Administration", "Docker", "Ansible"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Robert Paisley",
+      "reference": "Team lead analyst."
+    }
+  ],
+  "projects": [
+    {
+      "name": "cf2-docs",
+      "startDate": "2024-01-01",
+      "endDate": "ongoing",
+      "description": "ClickFunnels Help Center articles.",
+      "highlights": ["Implemented and trained others from scratch."],
+      "url": "https://www.github.com/mtthwnestor/cf2-docs"
+    }
+  ],
   "meta": {
     "version": "v1.0.0",
     "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"

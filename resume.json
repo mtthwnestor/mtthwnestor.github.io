@@ -84,7 +84,7 @@
   "education": [
     {
       "institution": "Decatur High School",
-      "area": "",
+      "area": "Federal Way",
       "studyType": "",
       "startDate": "",
       "endDate": "",
@@ -171,13 +171,17 @@
   "interests": [
     {
       "name": "Homelab",
-      "keywords": ["Self-hosted", "Networking", "Linux", "Docker", "Ansible"]
+      "keywords": ["Self-hosted", "Networking", "Linux", "Ansible", "Docker", "Bitwarden", "GitLab", "Matrix", "Jellyfin"]
     }
   ],
   "references": [
     {
       "name": "Robert Paisley",
-      "reference": "Team lead analyst."
+      "reference": "Matthew is constantly looking to improve himself and the team by learning and sharing skills that benefit us all."
+    },
+    {
+      "name": "Laura Demetrious",
+      "reference": "Matthew does a stellar job of staying on top of new functionalities that are otherwise complex for the average user."
     }
   ],
   "projects": [

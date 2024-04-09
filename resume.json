@@ -1,0 +1,350 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Matthew Nestor",
+    "label": "none",
+    "image": "",
+    "email": "mtthwnestor@gmail.com",
+    "phone": "2536320664",
+    "url": "",
+    "summary": "",
+    "location": {
+      "countryCode": "US",
+      "address": "United States"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "mtthwnestor",
+        "url": "https://www.linkedin.com/in/mtthwnestor/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "ClickFunnels",
+      "position": "Technical Writer",
+      "startDate": "2022-07-31",
+      "endDate": "",
+      "highlights": [],
+      "summary": "• Document a new large and complex SaaS platform, creating written help center articles and instructional videos to improve customer education and support.\n• Work closely with developers to document new features, ensuring the team is up-to-date on the latest platform capabilities.\n• Serve as subject matter expert (SME) for numerous topics, helping to streamline internal processes and improve communication within the team.",
+      "url": "https://www.linkedin.com/company/7793713",
+      "location": "Remote"
+    },
+    {
+      "name": "ClickFunnels",
+      "position": "Technical Support Specialist",
+      "startDate": "2021-09-30",
+      "endDate": "2022-10-31",
+      "highlights": [],
+      "summary": null,
+      "url": "https://www.linkedin.com/company/7793713",
+      "location": "Remote"
+    },
+    {
+      "name": "Adna Technologies",
+      "position": "Help Desk Specialist",
+      "startDate": "2018-03-31",
+      "endDate": "2020-05-31",
+      "highlights": [],
+      "summary": "• Provided technical support for a wide range of software and technologies, adapting quickly to meet unique\nclient requirements and find solutions.\n• Created and maintained detailed documentation and notes, improving efficiency and ensuring high-quality\ncustomer support.\n• Developed PowerShell scripts and custom tools maintained with Git, increasing automation and\nstreamlining internal processes.",
+      "url": "https://www.linkedin.com/company/563278",
+      "location": "Lansing, Michigan Area"
+    },
+    {
+      "name": "Jurassic Quest",
+      "position": "Electrical Team and IT",
+      "startDate": "2016-05-31",
+      "endDate": "2017-02-28",
+      "highlights": [],
+      "summary": "• Set up, configured, and troubleshooted wireless networks, computers, and devices, ensuring smooth\noperation of educational trivia game.\n• Built and maintained educational trivia game with Raspberry Pi using GPIO, Bash, Python, HTML/CSS,\nand JavaScript, engaging audiences of all ages.\n• Repaired and replaced damaged electronics and equipment, ensuring high-quality educational experience\nfor attendees.",
+      "url": "https://www.linkedin.com/company/6585658",
+      "location": "Travel"
+    },
+    {
+      "name": "Burger King Corporation",
+      "position": "Shift Manager",
+      "startDate": "2012-01-31",
+      "endDate": "2016-04-30",
+      "highlights": [],
+      "summary": "• Follow and enforce health and safety regulations.\n• Keep track of company cash, product, and employees.\n• Delegate tasks and maintain overall efficiency.\n• Ensure accurate data entry into NCR software.",
+      "url": "https://www.linkedin.com/company/162835",
+      "location": "Tacoma, Washington Area"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Decatur High School",
+      "area": "",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Jekyll",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "GitHub",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "English",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software as a Service (SaaS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML/CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Application Programming Interfaces (API)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python (Programming Language)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Windows 10",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JSON",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Excellent troubleshooting and problem solving.",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Technical Support",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Domain Name System (DNS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Electronics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Ubuntu",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Virtual Private Network (VPN)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Analytical Skills",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Documentation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Markdown",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Writing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Video Editing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Technical Writing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux Server",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Self Learning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Technical Documentation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Network Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "System Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Communication",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Network configuration and troubleshooting.",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Data Entry",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Online Help",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Docker",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Powershell",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Computer hardware installation and troubleshooting.",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Virtualization",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Adaptation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Bash",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Regulatory Compliance",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Windows and Linux installation, configuration, and troubleshooting.",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Office 365 Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cascading Style Sheets (CSS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "High Level Of Accuracy",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Computer Hardware Installation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Educational Games",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Technical Understanding",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Documentation",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}

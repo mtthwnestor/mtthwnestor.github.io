@@ -12,4 +12,4 @@ resume:
 		colima start; \
 	fi
 	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app node:$(NODE_IMAGE_TAG) /bin/bash -c "cd /app && npm install"
-	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app node:$(NODE_IMAGE_TAG) /bin/bash -c "cd /app && npx resumed --theme jsonresume-theme-even"
+	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app node:$(NODE_IMAGE_TAG) /bin/bash -c "cd /app && npx resumed --theme jsonresume-theme-even --output public/index.html"

@@ -119,7 +119,7 @@
     {
       "name": "JavaScript",
       "level": "",
-      "keywords": []
+      "keywords": ["API", "JSON"]
     },
     {
       "name": "Video Editing",
@@ -150,11 +150,11 @@
     },
     {
       "name": "Open Source",
-      "keywords": []
+      "keywords": ["Linux", "GitLab", "Raspberry Pi"]
     },
     {
       "name": "Gaming",
-      "keywords": []
+      "keywords": ["Nvidia", "Open Source"]
     }
   ],
   "references": [

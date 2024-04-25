@@ -4,5 +4,10 @@
 # NodeJS
 /node_modules/
 
-# Generated HTML resume
-/public/index.html
+# Generated site files
+/index.html
+/resume.pdf
+/public/*
+
+# Puppeteer
+/qemu_*

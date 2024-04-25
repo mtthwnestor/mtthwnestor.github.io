@@ -1,6 +1,13 @@
 {
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "init": "resumed init",
+    "pdf-export": "node pdf-export.js"
+  },
   "devDependencies": {
     "jsonresume-theme-even": "^0.22.0",
+    "puppeteer": "^22.6.3",
     "resumed": "^3.0.1"
   }
 }

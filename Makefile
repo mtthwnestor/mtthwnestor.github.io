@@ -12,4 +12,7 @@ resume:
 		colima start; \
 	fi
 	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app node:$(NODE_IMAGE_TAG) /bin/bash -c "cd /app && npm install"
-	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app node:$(NODE_IMAGE_TAG) /bin/bash -c "cd /app && npx resumed --theme jsonresume-theme-even --output public/index.html"
+	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app node:$(NODE_IMAGE_TAG) /bin/bash -c "cd /app && npx resumed --theme jsonresume-theme-even --output index.html"
+	@docker run --rm -i --init --cap-add=SYS_ADMIN --user 1000:1000 -v "$$PWD":/app ghcr.io/puppeteer/puppeteer:22.6.3 /bin/bash -c "cd /app && npx puppeteer browsers install chrome && npm run pdf-export"
+	cp photo.jpg public/
+	mv -t public/ index.html resume.pdf

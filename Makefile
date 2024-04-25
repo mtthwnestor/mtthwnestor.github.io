@@ -16,3 +16,7 @@ resume:
 	@docker run --rm -i --init --cap-add=SYS_ADMIN --user 1000:1000 -v "$$PWD":/app ghcr.io/puppeteer/puppeteer:22.6.3 /bin/bash -c "cd /app && npx puppeteer browsers install chrome && npm run pdf-export"
 	cp photo.jpg public/
 	mv -t public/ index.html resume.pdf
+
+clean:
+	rm -f "$$PWD/public/index.html" "$$PWD/public/photo.jpg" "$$PWD/public/resume.pdf"
+	if test -d "$$PWD/node_modules"; then sudo rm -r "$$PWD/node_modules"; fi

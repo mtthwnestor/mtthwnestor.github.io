@@ -7,7 +7,9 @@
 # Generated site files
 /index.html
 /resume.pdf
-/public/*
+/public/index.html
+/public/photo.jpg
+/public/resume.pdf
 
 # Puppeteer
 /qemu_*

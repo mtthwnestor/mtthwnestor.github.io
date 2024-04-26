@@ -24,7 +24,6 @@ jobs:
 
       - name: Build
         run: |
-          rm public/.keep
           npm install && npx resumed --theme jsonresume-theme-even --output index.html
           cp photo.jpg index.html public/
 

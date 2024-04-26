@@ -7,7 +7,7 @@
     "email": "mtthwnestor@gmail.com",
     "phone": "+1 (253) 632-0664",
     "url": "https://mtthwnestor.github.io",
-    "summary": "I am a highly detailed technical writer and programmer. I have implemented, trained, and maintained a full docs-as-code workflow for a SaaS business's Help Center/Knowledgebase, including theme customizations. At the same time I continued to write documentation for complex topics to educate users.",
+    "summary": "I am a highly detailed technical writer and programmer. I have implemented, trained, and maintained a full docs-as-code workflow for a SaaS business's Help Center / Knowledgebase, including theme customizations. At the same time I continued to write documentation for complex topics to educate users.",
     "location": {
       "address": "1128 W Michigan Ave",
       "postalCode": "MI 48915",
@@ -34,8 +34,8 @@
       "position": "Documentation Technical Lead",
       "startDate": "2022-07-31",
       "endDate": "",
-      "highlights": ["HTML/CSS/JS/Liquid", "Knowledgebase/Help Center", "Docs-as-Code/Jekyll", "DevOps/Docker", "Python/API"],
-      "summary": "ClickFunnels is a marketing/ecommerce SaaS company. I created, maintained, and improved the Help Center/Knowledgebase using a docs-as-code workflow from scratch.",
+      "highlights": ["Markdown / HTML / CSS / JavaScript / Liquid", "Knowledgebase / Help Center", "Docs as Code / Jekyll", "DevOps / Docker", "Python / API"],
+      "summary": "ClickFunnels is a marketing/ecommerce SaaS company. I created, maintained, and improved the Help Center / Knowledgebase using a docs-as-code workflow from scratch.",
       "url": "https://www.linkedin.com/company/7793713",
       "location": "Remote"
     },
@@ -54,7 +54,7 @@
       "position": "Help Desk Specialist",
       "startDate": "2018-03-31",
       "endDate": "2020-05-31",
-      "highlights": ["PowerShell", "Networking", "Hardware/Software/IT"],
+      "highlights": ["PowerShell", "Networking", "Hardware / Software / IT"],
       "summary": "Adna Technologies is a MSP, fully managing local business's IT needs. I provided technical support for a wide range of software and technologies, adapting quickly to meet unique client requirements and find solutions. At the same time, I created and maintained detailed documentation and notes, improving efficiency and ensuring high-quality customer support. To help improve efficiency, I developed PowerShell scripts and custom tools maintained with Git, increasing automation and streamlining internal processes.",
       "url": "https://www.linkedin.com/company/563278",
       "location": "Lansing, Michigan"
@@ -64,8 +64,8 @@
       "position": "Electrical Team and IT",
       "startDate": "2016-05-31",
       "endDate": "2017-02-28",
-      "highlights": ["Networking", "Python", "RaspberryPi", "Educational", "Electronics"],
-      "summary": "Jurassic Quest is a travelling dinosaur exhibit, providing entertainment and education for children and people of all ages. I set up, configured, and troubleshooted wireless networks, computers, and devices, ensuring smooth operation of life-size animatronics and attractions. My main project was building and maintaining an educational trivia game with a Raspberry Pi using GPIO, Bash, Python, HTML/CSS, and JavaScript, engaging audiences of all ages. At the same time, I repaired and replaced damaged electronics and equipment, ensuring a high-quality educational experience for attendees.",
+      "highlights": ["Networking", "Python", "Raspberry Pi", "Educational", "Electronics"],
+      "summary": "Jurassic Quest is a travelling dinosaur exhibit, providing entertainment and education for children and people of all ages. I set up, configured, and troubleshooted wireless networks, computers, and devices, ensuring smooth operation of life-size animatronics and attractions. My main project was building and maintaining an educational trivia game with a Raspberry Pi using GPIO, Bash, Python, HTML / CSS, and JavaScript, engaging audiences of all ages. At the same time, I repaired and replaced damaged electronics and equipment, ensuring a high-quality educational experience for attendees.",
       "url": "https://www.linkedin.com/company/6585658",
       "location": "Travel"
     },
@@ -104,7 +104,7 @@
     {
       "name": "GitHub",
       "level": "Intermediate",
-      "keywords": ["Git", "Automation", "CI/CD", "Collaboration"]
+      "keywords": ["Git", "Automation", "CI / CD", "Collaboration"]
     },
     {
       "name": "Web Development",

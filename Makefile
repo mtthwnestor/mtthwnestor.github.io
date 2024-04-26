@@ -18,5 +18,5 @@ resume:
 	mv -t public/ index.html resume.pdf
 
 clean:
-	rm -f "$$PWD/public/index.html" "$$PWD/public/photo.jpg" "$$PWD/public/resume.pdf"
+	rm -f "$$PWD/public/index.html" "$$PWD/public/photo.jpg" "$$PWD/public/resume.pdf" "$$PWD/index.html" "$$PWD/resume.pdf" "$$PWD"/qemu_*
 	if test -d "$$PWD/node_modules"; then sudo rm -r "$$PWD/node_modules"; fi

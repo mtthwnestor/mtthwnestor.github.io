@@ -19,12 +19,14 @@ pdf:
 	@if [ "$(UNAME)" = "Darwin" ]; then \
 		colima start; \
 	fi
-	@docker run --rm -i --init --cap-add=SYS_ADMIN --user 1000:1000 -v "$$PWD":/app ghcr.io/puppeteer/puppeteer:22.6.3 /bin/bash -c "cd /app && npx puppeteer browsers install chrome && npm run pdf-export"
+	@if [ "$(UNAME)" != "Darwin" ]; then \
+		docker run --rm -i --init --cap-add=SYS_ADMIN --user 1000:1000 -v "$$PWD":/app ghcr.io/puppeteer/puppeteer:22.6.3 /bin/bash -c "cd /app && npx puppeteer browsers install chrome && npm run pdf-export"; \
+	fi
 
 resume:
 	make pdf
 	cp photo.jpg public/
-	mv -t public/ index.html resume.pdf
+	mv index.html resume.pdf public/
 
 clean:
 	rm -f "$$PWD/public/index.html" "$$PWD/public/photo.jpg" "$$PWD/public/resume.pdf" "$$PWD/index.html" "$$PWD/resume.pdf" "$$PWD"/qemu_*

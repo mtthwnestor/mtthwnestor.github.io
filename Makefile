@@ -26,7 +26,10 @@ pdf:
 resume:
 	make pdf
 	cp photo.jpg public/
-	mv index.html resume.pdf public/
+	mv index.html public/
+	@if [ "$(UNAME)" != "Darwin" ]; then \
+		mv resume.pdf public/; \
+	fi
 
 clean:
 	rm -f "$$PWD/public/index.html" "$$PWD/public/photo.jpg" "$$PWD/public/resume.pdf" "$$PWD/index.html" "$$PWD/resume.pdf" "$$PWD"/qemu_*

@@ -33,7 +33,7 @@
       "name": "ClickFunnels",
       "position": "Documentation Technical Lead",
       "startDate": "2022-07-31",
-      "endDate": "",
+      "endDate": "2024-05-17",
       "highlights": ["Markdown / HTML / CSS / JavaScript / Liquid", "Knowledgebase / Help Center", "Docs as Code / Jekyll", "DevOps / Docker", "Python / API"],
       "summary": "ClickFunnels is a marketing/ecommerce SaaS company. I created, maintained, and improved the Help Center / Knowledgebase using a docs-as-code workflow from scratch.",
       "url": "https://www.linkedin.com/company/7793713",
@@ -135,6 +135,11 @@
       "name": "DevOps",
       "level": "Intermediate",
       "keywords": ["Docker", "make", "Bash", "GitHub", "YAML"]
+    },
+    {
+      "name": "AI",
+      "level": "Intermediate",
+      "keywords": ["Artificial Intelligence", "LLM", "RAG", "Ollama", "Docker", "API", "LangChain"]
     }
   ],
   "languages": [

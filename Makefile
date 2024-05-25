@@ -52,7 +52,7 @@ ollama:
 		colima start; \
 	fi
 	@docker run -d --init -v ollama:/root/.ollama -p 11434:11434 --gpus=all --name ollama ollama/ollama:0.1.37
-	@docker run -d --init -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data -e WEBUI_AUTH=false --name open-webui --restart always ghcr.io/open-webui/open-webui:git-90503be
+	@docker run -d --init -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data -v ./public:/app/backend/data/docs -e WEBUI_AUTH=false --name open-webui --restart always ghcr.io/open-webui/open-webui:git-90503be
 
 clean-jekyll:
 	if test -d "$$PWD/.gems-cache"; then rm -r "$$PWD/.gems-cache"; fi

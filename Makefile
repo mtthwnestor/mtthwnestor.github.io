@@ -43,6 +43,7 @@ resume:
 	make pdf
 	cp photo.jpg public/
 	mv index.html public/
+	find . -maxdepth 1 -name "Sample*.pdf" -exec cp '{}' public/ \;
 	@if [ "$(UNAME)" != "Darwin" ]; then \
 		mv resume.pdf public/; \
 	fi

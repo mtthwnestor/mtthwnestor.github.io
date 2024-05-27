@@ -9,7 +9,7 @@
 /resume.pdf
 /public/index.html
 /public/photo.jpg
-/public/resume.pdf
+/public/*.pdf
 
 # Puppeteer
 /qemu_*

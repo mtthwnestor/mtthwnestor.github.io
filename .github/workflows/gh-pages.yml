@@ -26,6 +26,7 @@ jobs:
         run: |
           npm install && npx resumed --theme jsonresume-theme-even --output index.html
           cp photo.jpg index.html public/
+          find . -name "Sample*.pdf" -exec cp '{}' public/ \;
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4

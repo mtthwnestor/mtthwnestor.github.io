@@ -6,6 +6,7 @@
     "pdf-export": "node pdf-export.js"
   },
   "devDependencies": {
+    "@jsonresume/jsonresume-theme-class": "^0.4.2",
     "jsonresume-theme-even": "^0.22.0",
     "puppeteer": "^22.6.3",
     "resumed": "^3.0.1"

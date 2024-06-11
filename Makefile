@@ -4,6 +4,8 @@ PYTHON_IMAGE := python:3.12.1-bookworm
 NODE_IMAGE := node:20.11.1
 LYCHEE_IMAGE := lycheeverse/lychee:0.14.3
 PUPETEER_IMAGE := ghcr.io/puppeteer/puppeteer:22.6.3
+OLLAMA_IMAGE := ollama/ollama:0.1.42
+OPEN-WEBUI_IMAGE := ghcr.io/open-webui/open-webui:git-06976c4
 
 jekyll-env:
 	@if [ "$(UNAME)" = "Darwin" ]; then \
@@ -55,8 +57,8 @@ ollama:
 	@if [ "$(UNAME)" = "Darwin" ]; then \
 		colima start; \
 	fi
-	@docker run --gpus=all -d --init -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama:0.1.37
-	@docker run -d --init -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data -v ./public:/app/backend/data/docs -e WEBUI_AUTH=false --name open-webui --restart always ghcr.io/open-webui/open-webui:git-90503be
+	@docker run --gpus=all -d --init -v ollama:/root/.ollama -p 11434:11434 --name ollama $(OLLAMA_IMAGE)
+	@docker run -d --init -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data -v ./public:/app/backend/data/docs -e WEBUI_AUTH=false --name open-webui --restart always $(OPEN-WEBUI_IMAGE)
 
 clean-jekyll:
 	if test -d "$$PWD/.gems-cache"; then rm -r "$$PWD/.gems-cache"; fi

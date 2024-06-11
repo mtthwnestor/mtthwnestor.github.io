@@ -24,8 +24,8 @@ jobs:
 
       - name: Build
         run: |
-          npm install && npx resumed --theme jsonresume-theme-even --output index.html
-          cp photo.jpg index.html public/
+          npm install && npx resumed --theme jsonresume-theme-even --output index.html && npx resumed --theme @jsonresume/jsonresume-theme-class --output matthew-nestor.html
+          cp photo.jpg index.html matthew-nestor.html public/
           find . -name "Sample*.pdf" -exec cp '{}' public/ \;
 
       - name: Deploy

@@ -98,7 +98,7 @@
   "skills": [
     {
       "name": "Docs-as-Code",
-      "level": "Intermediate",
+      "level": "Master",
       "keywords": ["Jekyll", "Markdown", "Liquid", "HTML", "CSS", "JavaScript", "YAML"]
     },
     {
@@ -118,7 +118,7 @@
     },
     {
       "name": "JavaScript",
-      "level": "",
+      "level": "Intermediate",
       "keywords": ["API", "JSON"]
     },
     {
@@ -128,12 +128,12 @@
     },
     {
       "name": "Technical Writing",
-      "level": "",
+      "level": "Master",
       "keywords": ["SaaS", "Help Center", "Knowledgebase", "Diátaxis"]
     },
     {
       "name": "DevOps",
-      "level": "Intermediate",
+      "level": "Master",
       "keywords": ["Docker", "make", "Bash", "GitHub", "YAML"]
     },
     {

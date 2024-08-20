@@ -14,8 +14,8 @@ const browser = await puppeteer.launch({
 const page = await browser.newPage()
 
 //await page.setContent(html, { waitUntil: 'networkidle0' })
-await page.goto('file:///app/index.html', {waitUntil: 'load', timeout: 0})
+await page.goto('file://./index.html', {waitUntil: 'load', timeout: 0})
 await page.pdf({ path: 'resume.pdf', format: 'letter', printBackground: true })
-await page.goto('file:///app/matthew-nestor.html', {waitUntil: 'load', timeout: 0})
+await page.goto('file://./matthew-nestor.html', {waitUntil: 'load', timeout: 0})
 await page.pdf({ path: 'matthew-nestor.pdf', format: 'letter', printBackground: true })
 await browser.close()

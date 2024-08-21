@@ -16,7 +16,10 @@ before_script:
   - npm install
 
 json_to_html:
-  image: node:20.11.1
+  image: 
+    name: node:20.11.1
+    docker:
+      user: 1000:1000
   stage: json-to-html
   script:
     - npx resumed --theme jsonresume-theme-even --output index.html
@@ -24,7 +27,10 @@ json_to_html:
   environment: production
 
 html_to_pdf:
-  image: ghcr.io/puppeteer/puppeteer:22.6.3
+  image:
+    name: ghcr.io/puppeteer/puppeteer:22.6.3
+    docker:
+      user: 1000:1000
   stage: html-to-pdf
   script:
     - npx puppeteer browsers install chrome
@@ -32,7 +38,10 @@ html_to_pdf:
   environment: production
 
 pages:
-  image: node:20.11.1
+  image:
+    name: node:20.11.1
+    docker:
+      user: 1000:1000
   stage: deploy
   script:
     - cp photo.jpg index.html matthew-nestor.html resume.pdf matthew-nestor.pdf public/

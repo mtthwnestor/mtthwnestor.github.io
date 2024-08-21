@@ -19,7 +19,7 @@ json_to_html:
   image: 
     name: node:20.11.1
     docker:
-      user: $CI_DEPLOY_USER
+      user: root
   stage: json-to-html
   script:
     - npx resumed --theme jsonresume-theme-even --output index.html
@@ -30,7 +30,7 @@ html_to_pdf:
   image:
     name: ghcr.io/puppeteer/puppeteer:22.6.3
     docker:
-      user: $CI_DEPLOY_USER
+      user: root
   stage: html-to-pdf
   script:
     - npx puppeteer browsers install chrome
@@ -41,7 +41,7 @@ pages:
   image:
     name: node:20.11.1
     docker:
-      user: $CI_DEPLOY_USER
+      user: root
   stage: deploy
   script:
     - cp photo.jpg index.html matthew-nestor.html resume.pdf matthew-nestor.pdf public/

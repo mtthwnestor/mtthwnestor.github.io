@@ -24,6 +24,12 @@ json_to_html:
   script:
     - npx resumed --theme jsonresume-theme-even --output index.html
     - npx resumed --theme @jsonresume/jsonresume-theme-class --output matthew-nestor.html
+  artifacts:
+    when: on_success
+    expire_in: 2 days
+    paths:
+      - "index.html"
+      - "matthew-nestor.html"
   environment: production
 
 html_to_pdf:
@@ -32,9 +38,17 @@ html_to_pdf:
     docker:
       user: root
   stage: html-to-pdf
+  dependencies:
+    - json_to_html
   script:
     - npx puppeteer browsers install chrome
     - npm run pdf-export
+  artifacts:
+    when: on_success
+    expire_in: 2 days
+    paths:
+      - "resume.pdf"
+      - "matthew-nestor.pdf"
   environment: production
 
 pages:
@@ -43,6 +57,9 @@ pages:
     docker:
       user: root
   stage: deploy
+  dependencies:
+    - json_to_html
+    - html_to_pdf
   script:
     - cp photo.jpg index.html matthew-nestor.html resume.pdf matthew-nestor.pdf public/
     - find . -name "Sample*.pdf" -exec cp '{}' public/ \;

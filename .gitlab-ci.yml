@@ -1,0 +1,45 @@
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+stages:
+  - json-to-html
+  - html-to-pdf
+  - deploy
+
+cache:
+  key: node_modules
+  paths:
+    - node_modules
+
+before_script:
+  - npm install
+
+json_to_html:
+  image: node:20.11.1
+  stage: json-to-html
+  script:
+    - npx resumed --theme jsonresume-theme-even --output index.html
+    - npx resumed --theme @jsonresume/jsonresume-theme-class --output matthew-nestor.html
+  environment: production
+
+html_to_pdf:
+  image: ghcr.io/puppeteer/puppeteer:22.6.3
+  stage: html-to-pdf
+  script:
+    - npx puppeteer browsers install chrome
+    - npm run pdf-export
+  environment: production
+
+pages:
+  image: node:20.11.1
+  stage: deploy
+  script:
+    - cp photo.jpg index.html matthew-nestor.html resume.pdf matthew-nestor.pdf public/
+    - find . -name "Sample*.pdf" -exec cp '{}' public/ \;
+  artifacts:
+    when: on_success
+    paths:
+      - public
+  publish: public
+  environment: production

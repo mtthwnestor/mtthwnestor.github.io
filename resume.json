@@ -7,7 +7,7 @@
     "email": "mtthwnestor@gmail.com",
     "phone": "+1 (253) 632-0664",
     "url": "https://mtthwnestor.github.io",
-    "summary": "I am a highly detailed technical writer and programmer. I have implemented, trained, and maintained a full docs-as-code workflow for a SaaS business's Help Center / Knowledgebase, including theme customizations. At the same time I continued to write documentation for complex topics to educate users.",
+    "summary": "I am a highly detailed technical writer and programmer. I have implemented, trained, and maintained a full docs-as-code workflow for a SaaS business's Help Center / Knowledge Base, including theme customizations. At the same time I continued to write documentation for complex topics to educate users.",
     "location": {
       "address": "1128 W Michigan Ave",
       "postalCode": "MI 48915",
@@ -34,8 +34,8 @@
       "position": "Documentation Technical Lead",
       "startDate": "2022-07-31",
       "endDate": "2024-05-17",
-      "highlights": ["Markdown / HTML / CSS / JavaScript / Liquid", "Knowledgebase / Help Center", "Docs as Code / Jekyll", "DevOps / Docker", "Python / API"],
-      "summary": "ClickFunnels is a marketing/ecommerce SaaS company. I created, maintained, and improved the Help Center / Knowledgebase using a docs-as-code workflow from scratch.",
+      "highlights": ["Markdown / HTML / CSS / JavaScript / Liquid", "Knowledge Base / Help Center", "Docs as Code / Jekyll", "DevOps / Docker", "Python / API"],
+      "summary": "ClickFunnels is a marketing/ecommerce SaaS company. I created, maintained, and improved the Help Center / Knowledge Base using a docs-as-code workflow from scratch.",
       "url": "https://www.linkedin.com/company/7793713",
       "location": "Remote"
     },
@@ -129,7 +129,7 @@
     {
       "name": "Technical Writing",
       "level": "Master",
-      "keywords": ["SaaS", "Help Center", "Knowledgebase", "Diátaxis"]
+      "keywords": ["SaaS", "Help Center", "Knowledge Base", "Diátaxis"]
     },
     {
       "name": "DevOps",

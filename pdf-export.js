@@ -10,6 +10,10 @@ const resume = JSON.parse(await fs.readFile('resume.json', 'utf-8'))
 const html = await render(resume, theme)
 const html_ats = await render(resume, theme_ats)
 
+const resume_retail = JSON.parse(await fs.readFile('resume-retail.json', 'utf-8'))
+const html_retail = await render(resume_retail, theme)
+const html_ats_retail = await render(resume_retail, theme_ats)
+
 const browser = await puppeteer.launch({
     args: ['--no-sandbox', '--disable-setuid-sandbox']
 })
@@ -20,4 +24,10 @@ await page.goto(`file:${path.join(cwd(), 'index.html')}`, {waitUntil: 'load', ti
 await page.pdf({ path: 'resume.pdf', format: 'letter', printBackground: true })
 await page.goto(`file:${path.join(cwd(), 'matthew-nestor.html')}`, {waitUntil: 'load', timeout: 0})
 await page.pdf({ path: 'matthew-nestor.pdf', format: 'letter', printBackground: true })
+
+await page.goto(`file:${path.join(cwd(), 'index-retail.html')}`, {waitUntil: 'load', timeout: 0})
+await page.pdf({ path: 'resume-retail.pdf', format: 'letter', printBackground: true })
+await page.goto(`file:${path.join(cwd(), 'matthew-nestor-retail.html')}`, {waitUntil: 'load', timeout: 0})
+await page.pdf({ path: 'matthew-nestor-retail.pdf', format: 'letter', printBackground: true })
+
 await browser.close()

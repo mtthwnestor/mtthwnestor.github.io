@@ -27,8 +27,10 @@ jobs:
           npm install
           npx resumed --theme jsonresume-theme-even --output index.html
           npx resumed --theme @jsonresume/jsonresume-theme-class --output matthew-nestor.html
+          npx resumed resume-retail.json --theme jsonresume-theme-even --output index-retail.html
+          npx resumed resume-retail.json --theme @jsonresume/jsonresume-theme-class --output matthew-nestor-retail.html
           npx puppeteer browsers install chrome && npm run pdf-export
-          cp photo.jpg index.html matthew-nestor.html resume.pdf matthew-nestor.pdf public/
+          cp photo.jpg index.html matthew-nestor.html resume.pdf matthew-nestor.pdf index-retail.html matthew-nestor-retail.html resume-retail.pdf matthew-nestor-retail.pdf public/
           find . -name "Sample*.pdf" -exec cp '{}' public/ \;
 
       - name: Deploy

@@ -1,0 +1,166 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "basics": {
+      "name": "Matthew Nestor",
+      "label": "",
+      "image": "photo.jpg",
+      "email": "mtthwnestor@gmail.com",
+      "phone": "+1 (253) 632-0664",
+      "url": "",
+      "summary": "Enthusiastic and customer-focused professional with experience in providing exceptional service in dynamic environments. Detail oriented and skilled in inventory management, point-of-sale operations, and maintaining a clean and organized environment.",
+      "location": {
+        "address": "1128 W Michigan Ave",
+        "postalCode": "MI 48915",
+        "city": "Lansing",
+        "countryCode": "US",
+        "region": "Michigan"
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "mtthwnestor",
+          "url": "https://www.linkedin.com/in/mtthwnestor/"
+        }
+      ]
+    },
+    "work": [
+      {
+        "name": "ClickFunnels",
+        "position": "Documentation Technical Lead",
+        "startDate": "2022-07-31",
+        "endDate": "2024-05-17",
+        "highlights": [],
+        "summary": "ClickFunnels is a marketing/ecommerce SaaS company. I created, maintained, and improved the customer education and understanding through communication and documentation.",
+        "url": "https://www.linkedin.com/company/7793713",
+        "location": "Remote"
+      },
+      {
+        "name": "ClickFunnels",
+        "position": "Technical Support Specialist",
+        "startDate": "2021-09-23",
+        "endDate": "2022-10-31",
+        "highlights": [],
+        "summary": null,
+        "url": "https://www.linkedin.com/company/7793713",
+        "location": "Remote"
+      },
+      {
+        "name": "Adna Technologies",
+        "position": "Help Desk Specialist",
+        "startDate": "2018-03-31",
+        "endDate": "2020-05-31",
+        "highlights": [],
+        "summary": "Adna Technologies is a MSP, fully managing local business's IT needs. I provided technical support for a wide range of software and technologies, adapting quickly to meet unique client requirements and find solutions. At the same time, I created and maintained detailed documentation and notes, improving efficiency and ensuring high-quality customer support.",
+        "url": "https://www.linkedin.com/company/563278",
+        "location": "Lansing, Michigan"
+      },
+      {
+        "name": "Meijer",
+        "position": "Cashier, customer service, etc.",
+        "startDate": "2017-09-02",
+        "endDate": "2018-02-28",
+        "highlights": ["Cashier", "Customer Service", "Carts", "Stock"],
+        "summary": "During my time at Meijer, I gained hands-on experience in various retail operations, contributing to a positive customer experience and the efficient running of the store. As a cashier, I accurately processed transactions, handled customer inquiries, and maintained a fast-paced, friendly checkout environment. I also collected carts from the parking lot, ensuring a clean and safe shopping environment for customers. In addition to cashier duties, I helped stock shelves, organizing and replenishing merchandise to ensure product availability and maintain a neat and orderly store layout. At the customer service desk, I assisted customers with returns, exchanges, and inquiries, addressing concerns and resolving issues in a professional and efficient manner.",
+        "url": "https://www.linkedin.com/company/meijer/",
+        "location": "Lansing, Michigan"
+      },
+      {
+        "name": "Jurassic Quest",
+        "position": "Electrical and IT",
+        "startDate": "2016-05-31",
+        "endDate": "2017-02-28",
+        "highlights": [],
+        "summary": "Jurassic Quest is a travelling dinosaur exhibit, providing entertainment and education for children and people of all ages. My main project was building and maintaining an educational trivia game, engaging audiences of all ages. At the same time, I repaired and replaced damaged electronics and equipment, ensuring a high-quality educational experience for attendees.",
+        "url": "https://www.linkedin.com/company/6585658",
+        "location": "Travel"
+      },
+      {
+        "name": "Burger King Corporation",
+        "position": "Shift Manager",
+        "startDate": "2012-01-31",
+        "endDate": "2016-04-30",
+        "highlights": [],
+        "summary": "During my time here, I followed and enforced health and safety regulations. I was also responsible for tracking company cash, product, and employees. This role required me to delegate tasks and maintain overall efficiency. I also ensured accurate data entry into point of sale software.",
+        "url": "https://www.linkedin.com/company/162835",
+        "location": "Tacoma, Washington"
+      }
+    ],
+    "volunteer": [],
+    "education": [
+      {
+        "institution": "Decatur High School",
+        "area": "Federal Way",
+        "studyType": "High School",
+        "startDate": "2007",
+        "endDate": "2011",
+        "score": "",
+        "courses": []
+      }
+    ],
+    "awards": [],
+    "certificates": [],
+    "publications": [],
+    "skills": [
+      {
+        "name": "Technical Writing",
+        "level": "Master",
+        "keywords": ["SaaS", "Help Center", "Knowledge Base", "Agile", "Diátaxis", "Information Development"]
+      },
+      {
+        "name": "Customer Service",
+        "level": "Master",
+        "keywords": ["Active Listening", "Empathy and Patience", "Problem Solving", "Product Knowledge"]
+      },
+      {
+        "name": "Communication",
+        "level": "Master",
+        "keywords": ["Verbal Communication", "Written Communication", "Clear and Concise Messaging"]
+      },
+      {
+        "name": "Cash Handling and POS Systems",
+        "level": "Master",
+        "keywords": ["Cash Register Operation", "Point-of-Sale Software", "Cash Handling Accuracy"]
+      },
+      {
+        "name": "Time Management",
+        "level": "Master",
+        "keywords": ["Multitasking", "Prioritizing Tasks", "Handling High-Volume Periods", "Efficient Workflow Management"]
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "fluency": "Native Speaker"
+      }
+    ],
+    "interests": [
+      {
+        "name": "Homelab",
+        "keywords": ["Self-hosted", "Networking", "Linux", "Ansible", "Docker"]
+      },
+      {
+        "name": "Open Source",
+        "keywords": ["Linux", "GitLab", "Raspberry Pi"]
+      },
+      {
+        "name": "Gaming",
+        "keywords": ["Nvidia", "Open Source"]
+      }
+    ],
+    "references": [
+      {
+        "name": "Robert Paisley, Documentation Lead Analyst at ClickFunnels",
+        "reference": "Matthew is constantly looking to improve himself and the team by learning and sharing skills that benefit us all."
+      }
+    ],
+    "projects": [
+      {
+      }
+    ],
+    "meta": {
+      "version": "v1.0.0",
+      "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json",
+      "language": "en"
+    }
+  }
+  

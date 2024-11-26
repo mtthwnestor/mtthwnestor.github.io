@@ -1,11 +1,11 @@
 UNAME := $(shell uname)
-RUBY_IMAGE := ruby:3.3.1-bookworm
-PYTHON_IMAGE := python:3.12.1-bookworm
+RUBY_IMAGE := ruby:3.3-bookworm
+PYTHON_IMAGE := python:3.12-bookworm
 NODE_IMAGE := node:20.11.1
-LYCHEE_IMAGE := lycheeverse/lychee:0.14.3
+LYCHEE_IMAGE := lycheeverse/lychee:latest
 PUPETEER_IMAGE := ghcr.io/puppeteer/puppeteer:22.6.3
-OLLAMA_IMAGE := ollama/ollama:0.1.42
-OPEN-WEBUI_IMAGE := ghcr.io/open-webui/open-webui:git-06976c4
+OLLAMA_IMAGE := ollama/ollama:0.4.4
+OPEN-WEBUI_IMAGE := ghcr.io/open-webui/open-webui:git-d870386
 
 jekyll-env:
 	@if [ "$(UNAME)" = "Darwin" ]; then \
@@ -32,6 +32,8 @@ html:
 	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "cd /app && npm install"
 	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "cd /app && npx resumed --theme jsonresume-theme-even --output index.html"
 	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "cd /app && npx resumed --theme @jsonresume/jsonresume-theme-class --output matthew-nestor.html"
+	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "cd /app && npx resumed resume-retail.json --theme jsonresume-theme-even --output index-retail.html"
+	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "cd /app && npx resumed resume-retail.json --theme @jsonresume/jsonresume-theme-class --output matthew-nestor-retail.html"
 
 pdf:
 	make html
@@ -47,10 +49,14 @@ resume:
 	cp photo.jpg public/
 	mv index.html public/
 	mv matthew-nestor.html public/
+	mv index-retail.html public/
+	mv matthew-nestor-retail.html public/
 	find . -maxdepth 1 -name "Sample*.pdf" -exec cp '{}' public/ \;
 	@if [ "$(UNAME)" != "Darwin" ]; then \
 		mv resume.pdf public/; \
 		mv matthew-nestor.pdf public/; \
+		mv resume-retail.pdf public/; \
+		mv matthew-nestor-retail.pdf public/; \
 	fi
 
 ollama:
@@ -83,4 +89,4 @@ clean:
 	make clean-python
 	make clean-node
 	make clean-lychee
-	rm -f "$$PWD/public/index.html" "$$PWD/public/matthew-nestor.html" "$$PWD/public/photo.jpg" "$$PWD/public/resume.pdf" "$$PWD/public/matthew-nestor.pdf" "$$PWD/index.html" "$$PWD/matthew-nestor.html" "$$PWD/resume.pdf" "$$PWD/matthew-nestor.pdf" "$$PWD"/qemu_*
+	rm -f "$$PWD/public/index.html" "$$PWD/public/matthew-nestor.html" "$$PWD/public/index-retail.html" "$$PWD/public/matthew-nestor-retail.html" "$$PWD/public/photo.jpg" "$$PWD/public/resume.pdf" "$$PWD/public/matthew-nestor.pdf" "$$PWD/index.html" "$$PWD/matthew-nestor.html" "$$PWD/resume.pdf" "$$PWD/matthew-nestor.pdf" "$$PWD"/qemu_*

@@ -7,7 +7,7 @@ PUPETEER_IMAGE := ghcr.io/puppeteer/puppeteer:22.6.3
 OLLAMA_IMAGE := ollama/ollama:0.4.4
 OPEN-WEBUI_IMAGE := ghcr.io/open-webui/open-webui:git-d870386
 
-jekyll-env:
+ruby-env:
 	@if [ "$(UNAME)" = "Darwin" ]; then \
 		colima start; \
 	fi
@@ -66,8 +66,10 @@ ollama:
 	@docker run --gpus=all -d --init -v ollama:/root/.ollama -p 11434:11434 --name ollama $(OLLAMA_IMAGE)
 	@docker run -d --init -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data -v ./public:/app/backend/data/docs -e WEBUI_AUTH=false --name open-webui --restart always $(OPEN-WEBUI_IMAGE)
 
-clean-jekyll:
+clean-ruby:
 	if test -d "$$PWD/.gems-cache"; then rm -r "$$PWD/.gems-cache"; fi
+
+clean-jekyll:
 	if test -d "$$PWD/.jekyll-cache"; then rm -r "$$PWD/.jekyll-cache"; fi
 	if test -d "$$PWD/_site"; then rm -r "$$PWD/_site"; fi
 	if test -e "$$PWD/.jekyll-metadata"; then rm -r "$$PWD/.jekyll-metadata"; fi
@@ -85,6 +87,7 @@ clean-lychee:
 	if test -e "$$PWD/scripts/reports/lychee.md"; then rm -r "$$PWD/scripts/reports/lychee.md"; fi
 
 clean:
+	make clean-ruby
 	make clean-jekyll
 	make clean-python
 	make clean-node

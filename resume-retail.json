@@ -133,20 +133,7 @@
         "fluency": "Native Speaker"
       }
     ],
-    "interests": [
-      {
-        "name": "Homelab",
-        "keywords": ["Self-hosted", "Networking", "Linux", "Ansible", "Docker"]
-      },
-      {
-        "name": "Open Source",
-        "keywords": ["Linux", "GitLab", "Raspberry Pi"]
-      },
-      {
-        "name": "Gaming",
-        "keywords": ["Nvidia", "Open Source"]
-      }
-    ],
+    "interests": [],
     "references": [
       {
         "name": "Robert Paisley, Documentation Lead Analyst at ClickFunnels",

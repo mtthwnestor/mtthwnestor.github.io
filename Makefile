@@ -1,11 +1,11 @@
 UNAME := $(shell uname)
-RUBY_IMAGE := ruby:3.3-bookworm
-PYTHON_IMAGE := python:3.12-bookworm
-NODE_IMAGE := node:20.11.1
+RUBY_IMAGE := ruby:3
+PYTHON_IMAGE := python:3
+NODE_IMAGE := node:22
 LYCHEE_IMAGE := lycheeverse/lychee:latest
 PUPETEER_IMAGE := ghcr.io/puppeteer/puppeteer:22.6.3
-OLLAMA_IMAGE := ollama/ollama:0.4.4
-OPEN-WEBUI_IMAGE := ghcr.io/open-webui/open-webui:git-d870386
+OLLAMA_IMAGE := ollama/ollama:latest
+OPEN-WEBUI_IMAGE := ghcr.io/open-webui/open-webui:main
 
 ruby-env:
 	@if [ "$(UNAME)" = "Darwin" ]; then \

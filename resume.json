@@ -34,7 +34,13 @@
       "position": "Documentation Technical Lead",
       "startDate": "2022-07-31",
       "endDate": "2024-05-17",
-      "highlights": ["Markdown / HTML / CSS / JavaScript / Liquid", "Knowledge Base / Help Center", "Docs as Code / Jekyll", "DevOps / Docker", "Python / API"],
+      "highlights": [
+        "Markdown / HTML / CSS / JavaScript / Liquid",
+        "Knowledge Base / Help Center",
+        "Docs as Code / Jekyll",
+        "DevOps / Docker",
+        "Python / API"
+      ],
       "summary": "ClickFunnels is a marketing/ecommerce SaaS company. I created, maintained, and improved the Help Center / Knowledge Base using a docs-as-code workflow from scratch.",
       "url": "https://www.linkedin.com/company/7793713",
       "location": "Remote"
@@ -64,7 +70,13 @@
       "position": "Electrical and IT",
       "startDate": "2016-05-31",
       "endDate": "2017-02-28",
-      "highlights": ["Networking", "Python", "Raspberry Pi", "Educational", "Electronics"],
+      "highlights": [
+        "Networking",
+        "Python",
+        "Raspberry Pi",
+        "Educational",
+        "Electronics"
+      ],
       "summary": "Jurassic Quest is a travelling dinosaur exhibit, providing entertainment and education for children and people of all ages. I set up, configured, and troubleshooted wireless networks, computers, and devices, ensuring smooth operation of life-size animatronics and attractions. My main project was building and maintaining an educational trivia game with a Raspberry Pi using GPIO, Bash, Python, HTML / CSS, and JavaScript, engaging audiences of all ages. At the same time, I repaired and replaced damaged electronics and equipment, ensuring a high-quality educational experience for attendees.",
       "url": "https://www.linkedin.com/company/6585658",
       "location": "Travel"
@@ -99,7 +111,15 @@
     {
       "name": "Docs-as-Code",
       "level": "Master",
-      "keywords": ["Jekyll", "Markdown", "Liquid", "HTML", "CSS", "JavaScript", "YAML"]
+      "keywords": [
+        "Jekyll",
+        "Markdown",
+        "Liquid",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "YAML"
+      ]
     },
     {
       "name": "GitHub",
@@ -129,7 +149,14 @@
     {
       "name": "Technical Writing",
       "level": "Master",
-      "keywords": ["SaaS", "Help Center", "Knowledge Base", "Agile", "Diátaxis", "Information Development"]
+      "keywords": [
+        "SaaS",
+        "Help Center",
+        "Knowledge Base",
+        "Agile",
+        "Diátaxis",
+        "Information Development"
+      ]
     },
     {
       "name": "DevOps",
@@ -139,7 +166,15 @@
     {
       "name": "AI",
       "level": "Intermediate",
-      "keywords": ["Artificial Intelligence", "LLM", "RAG", "Ollama", "Docker", "API", "LangChain"]
+      "keywords": [
+        "Artificial Intelligence",
+        "LLM",
+        "RAG",
+        "Ollama",
+        "Docker",
+        "API",
+        "LangChain"
+      ]
     }
   ],
   "languages": [

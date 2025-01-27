@@ -1,17 +1,9 @@
 UNAME := $(shell uname)
-RUBY_IMAGE := ruby:3
 PYTHON_IMAGE := python:3
 NODE_IMAGE := node:22
-LYCHEE_IMAGE := lycheeverse/lychee:latest
-PUPETEER_IMAGE := ghcr.io/puppeteer/puppeteer:22.6.3
+PUPPETEER_IMAGE := ghcr.io/puppeteer/puppeteer:22.15.0
 OLLAMA_IMAGE := ollama/ollama:latest
 OPEN-WEBUI_IMAGE := ghcr.io/open-webui/open-webui:main
-
-ruby-env:
-	@if [ "$(UNAME)" = "Darwin" ]; then \
-		colima start; \
-	fi
-	@docker run --init --rm -it --name resume-ruby -w /app -v "$$PWD":/app -p 80:4000 -p 35729:35729 -e BUNDLE_FORCE_RUBY_PLATFORM=true -e BUNDLE_PATH=.gems-cache $(RUBY_IMAGE)
 
 python-env:
 	@if [ "$(UNAME)" = "Darwin" ]; then \
@@ -23,17 +15,17 @@ node-env:
 	@if [ "$(UNAME)" = "Darwin" ]; then \
 		colima start; \
 	fi
-	@docker run --init --rm -it --name resume-node -w /app -v "$$PWD":/app $(NODE_IMAGE) /bin/bash
+	@docker run --init --rm -it --name resume-node --user $$(id -u):$$(id -g) -w /app -v "$$PWD":/app -e XDG_CONFIG_HOME=/tmp/.chromium -e PUPPETEER_CACHE_DIR="/app/.cache/puppeteer" $(NODE_IMAGE) /bin/bash
 
 html:
 	@if [ "$(UNAME)" = "Darwin" ]; then \
 		colima start; \
 	fi
-	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "cd /app && npm install"
-	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "cd /app && npx resumed --theme jsonresume-theme-even --output index.html"
-	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "cd /app && npx resumed --theme @jsonresume/jsonresume-theme-class --output matthew-nestor.html"
-	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "cd /app && npx resumed resume-retail.json --theme jsonresume-theme-even --output index-retail.html"
-	@docker run --rm -it --name mtthwnestor-resume -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "cd /app && npx resumed resume-retail.json --theme @jsonresume/jsonresume-theme-class --output matthew-nestor-retail.html"
+	@docker run --rm -it --name mtthwnestor-resume --user $$(id -u):$$(id -g) -w /app -v "$$PWD":/app -e XDG_CONFIG_HOME=/tmp/.chromium -e PUPPETEER_CACHE_DIR="/app/.cache/puppeteer" $(NODE_IMAGE) /bin/bash -c "npm install"
+	@docker run --rm -it --name mtthwnestor-resume --user $$(id -u):$$(id -g) -w /app -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "npx resumed --theme jsonresume-theme-even --output index.html"
+	@docker run --rm -it --name mtthwnestor-resume --user $$(id -u):$$(id -g) -w /app -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "npx resumed --theme @jsonresume/jsonresume-theme-class --output matthew-nestor.html"
+	@docker run --rm -it --name mtthwnestor-resume --user $$(id -u):$$(id -g) -w /app -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "npx resumed resume-retail.json --theme jsonresume-theme-even --output index-retail.html"
+	@docker run --rm -it --name mtthwnestor-resume --user $$(id -u):$$(id -g) -w /app -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "npx resumed resume-retail.json --theme @jsonresume/jsonresume-theme-class --output matthew-nestor-retail.html"
 
 pdf:
 	make html
@@ -41,7 +33,7 @@ pdf:
 		colima start; \
 	fi
 	@if [ "$(UNAME)" != "Darwin" ]; then \
-		docker run --rm -i --init --cap-add=SYS_ADMIN --user 1000:1000 -v "$$PWD":/app $(PUPETEER_IMAGE) /bin/bash -c "cd /app && npx puppeteer browsers install chrome && npm run pdf-export"; \
+		docker run --rm -i --init --cap-add=SYS_ADMIN --user $$(id -u):$$(id -g) -w /app -v "$$PWD":/app -e XDG_CONFIG_HOME=/tmp/.chromium -e PUPPETEER_CACHE_DIR="/app/.cache/puppeteer" $(PUPPETEER_IMAGE) /bin/bash -c "npx puppeteer browsers install chrome && npm run pdf-export"; \
 	fi
 
 resume:
@@ -66,30 +58,15 @@ ollama:
 	@docker run --gpus=all -d --init -v ollama:/root/.ollama -p 11434:11434 --name ollama $(OLLAMA_IMAGE)
 	@docker run -d --init -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data -v ./public:/app/backend/data/docs -e WEBUI_AUTH=false --name open-webui --restart always $(OPEN-WEBUI_IMAGE)
 
-clean-ruby:
-	if test -d "$$PWD/.gems-cache"; then rm -r "$$PWD/.gems-cache"; fi
-
-clean-jekyll:
-	if test -d "$$PWD/.jekyll-cache"; then rm -r "$$PWD/.jekyll-cache"; fi
-	if test -d "$$PWD/_site"; then rm -r "$$PWD/_site"; fi
-	if test -e "$$PWD/.jekyll-metadata"; then rm -r "$$PWD/.jekyll-metadata"; fi
-	if test -d "$$PWD/.sass-cache"; then rm -r "$$PWD/.sass-cache"; fi
-
 clean-python:
-	if test -d "$$PWD/__pycache__"; then rm -r "$$PWD/__pycache__"; fi
+	if test -d "$$PWD/__pycache__"; then rm -rf "$$PWD/__pycache__"; fi
 
 clean-node:
-	if test -d "$$PWD/node_modules"; then rm -r "$$PWD/node_modules"; fi
-
-clean-lychee:
-	if test -e "$$PWD/.lycheecookies"; then rm -r "$$PWD/.lycheecookies"; fi
-	if test -e "$$PWD/.lycheecache"; then rm -r "$$PWD/.lycheecache"; fi
-	if test -e "$$PWD/scripts/reports/lychee.md"; then rm -r "$$PWD/scripts/reports/lychee.md"; fi
+	if test -d "$$PWD/node_modules"; then rm -rf "$$PWD/node_modules"; fi
 
 clean:
-	make clean-ruby
-	make clean-jekyll
 	make clean-python
 	make clean-node
-	make clean-lychee
-	rm -f "$$PWD/public/index.html" "$$PWD/public/matthew-nestor.html" "$$PWD/public/index-retail.html" "$$PWD/public/matthew-nestor-retail.html" "$$PWD/public/photo.jpg" "$$PWD/public/resume.pdf" "$$PWD/public/matthew-nestor.pdf" "$$PWD/index.html" "$$PWD/matthew-nestor.html" "$$PWD/resume.pdf" "$$PWD/matthew-nestor.pdf" "$$PWD"/qemu_*
+	if test -d .cache/*; then find $$PWD/.cache/* -maxdepth 0 -type d -exec rm -rf '{}' \;; fi
+	rm -f "$$PWD/index.html" "$$PWD/public/index.html" "$$PWD/resume.pdf" "$$PWD/public/resume.pdf" "$$PWD/matthew-nestor.html" "$$PWD/public/matthew-nestor.html" "$$PWD/matthew-nestor.pdf" "$$PWD/public/matthew-nestor.pdf" "$$PWD/index-retail.html" "$$PWD/public/index-retail.html" "$$PWD/resume-retail.pdf" "$$PWD/public/resume-retail.pdf" "$$PWD/matthew-nestor-retail.html" "$$PWD/public/matthew-nestor-retail.html" "$$PWD/matthew-nestor-retail.pdf" "$$PWD/public/matthew-nestor-retail.pdf" "$$PWD/public/photo.jpg" "$$PWD"/qemu_*
+	find public/ -name "Sample*.pdf" -exec rm -f '{}' \;

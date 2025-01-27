@@ -1,8 +1,12 @@
 # Mac OS files...
 .DS_Store
 
+# Caches
+/.cache/
+
 # NodeJS
 /node_modules/
+/.npm/
 
 # Generated site files
 /index.html
@@ -22,3 +26,4 @@
 
 # Puppeteer
 /qemu_*
+/.pki/

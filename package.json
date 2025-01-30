@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "@jsonresume/jsonresume-theme-class": "^0.4.2",
-    "jsonresume-theme-even": "^0.22.1",
+    "jsonresume-theme-even": "^0.23.0",
     "puppeteer": "^22.15.0",
     "resumed": "^3.0.1"
   }

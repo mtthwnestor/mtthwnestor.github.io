@@ -108,6 +108,8 @@
         "SaaS",
         "Help Center",
         "Knowledge Base",
+        "Zendesk",
+        "Freshdesk",
         "Agile",
         "Diátaxis",
         "Information Development"
@@ -155,7 +157,7 @@
   "languages": [
     {
       "language": "English",
-      "fluency": "Native Speaker"
+      "fluency": "Native"
     }
   ],
   "interests": [],

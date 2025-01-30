@@ -6,7 +6,7 @@
     "image": "photo.jpg",
     "email": "mtthwnestor@gmail.com",
     "phone": "+1 (253) 632-0664",
-    "url": "https://mtthwnestor.github.io",
+    "url": "https://matt.piperpages.net/cv/",
     "summary": "I am a highly detailed technical writer and programmer. I have implemented, trained, and maintained a full docs-as-code workflow for a SaaS business's Help Center / Knowledge Base, including theme customizations. At the same time I continued to write documentation for complex topics to educate users.",
     "location": {
       "address": "1128 W Michigan Ave",
@@ -25,6 +25,11 @@
         "network": "GitHub",
         "username": "mtthwnestor",
         "url": "https://github.com/mtthwnestor"
+      },
+      {
+        "network": "GitLab",
+        "username": "matt",
+        "url": "https://gitlab.piperservers.net/matt"
       }
     ]
   },
@@ -153,6 +158,8 @@
         "SaaS",
         "Help Center",
         "Knowledge Base",
+        "Zendesk",
+        "Freshdesk",
         "Agile",
         "Diátaxis",
         "Information Development"
@@ -180,7 +187,7 @@
   "languages": [
     {
       "language": "English",
-      "fluency": "Native Speaker"
+      "fluency": "Native"
     }
   ],
   "interests": [

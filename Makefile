@@ -21,7 +21,7 @@ html:
 	@if [ "$(UNAME)" = "Darwin" ]; then \
 		colima start; \
 	fi
-	@docker run --rm -it --name mtthwnestor-resume --user $$(id -u):$$(id -g) -w /app -v "$$PWD":/app -e XDG_CONFIG_HOME=/tmp/.chromium -e PUPPETEER_CACHE_DIR="/app/.cache/puppeteer" $(NODE_IMAGE) /bin/bash -c "npm install"
+	@docker run --rm -it --name mtthwnestor-resume --user $$(id -u):$$(id -g) -w /app -v "$$PWD":/app -e XDG_CONFIG_HOME=/tmp/.chromium -e PUPPETEER_CACHE_DIR="/app/.cache/puppeteer" $(NODE_IMAGE) /bin/bash -c "npm ci"
 	@docker run --rm -it --name mtthwnestor-resume --user $$(id -u):$$(id -g) -w /app -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "npx resumed --theme jsonresume-theme-even --output index.html"
 	@docker run --rm -it --name mtthwnestor-resume --user $$(id -u):$$(id -g) -w /app -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "npx resumed --theme @jsonresume/jsonresume-theme-class --output matthew-nestor.html"
 	@docker run --rm -it --name mtthwnestor-resume --user $$(id -u):$$(id -g) -w /app -v "$$PWD":/app $(NODE_IMAGE) /bin/bash -c "npx resumed resume-retail.json --theme jsonresume-theme-even --output index-retail.html"
@@ -67,6 +67,6 @@ clean-node:
 clean:
 	make clean-python
 	make clean-node
-	if test -d .cache/*; then find $$PWD/.cache/* -maxdepth 0 -type d -exec rm -rf '{}' \;; fi
+	if test -d ".cache/*"; then find $$PWD/.cache/* -maxdepth 0 -type d -exec rm -rf '{}' \;; fi
 	rm -f "$$PWD/index.html" "$$PWD/public/index.html" "$$PWD/resume.pdf" "$$PWD/public/resume.pdf" "$$PWD/matthew-nestor.html" "$$PWD/public/matthew-nestor.html" "$$PWD/matthew-nestor.pdf" "$$PWD/public/matthew-nestor.pdf" "$$PWD/index-retail.html" "$$PWD/public/index-retail.html" "$$PWD/resume-retail.pdf" "$$PWD/public/resume-retail.pdf" "$$PWD/matthew-nestor-retail.html" "$$PWD/public/matthew-nestor-retail.html" "$$PWD/matthew-nestor-retail.pdf" "$$PWD/public/matthew-nestor-retail.pdf" "$$PWD/public/photo.jpg" "$$PWD"/qemu_*
 	find public/ -name "Sample*.pdf" -exec rm -f '{}' \;

@@ -67,6 +67,6 @@ clean-node:
 clean:
 	make clean-python
 	make clean-node
-	if test -d ".cache/*"; then find $$PWD/.cache/* -maxdepth 0 -type d -exec rm -rf '{}' \;; fi
+	if test -d .cache/*; then find $$PWD/.cache/* -maxdepth 0 -type d -exec rm -rf '{}' \;; fi
 	rm -f "$$PWD/index.html" "$$PWD/public/index.html" "$$PWD/resume.pdf" "$$PWD/public/resume.pdf" "$$PWD/matthew-nestor.html" "$$PWD/public/matthew-nestor.html" "$$PWD/matthew-nestor.pdf" "$$PWD/public/matthew-nestor.pdf" "$$PWD/index-retail.html" "$$PWD/public/index-retail.html" "$$PWD/resume-retail.pdf" "$$PWD/public/resume-retail.pdf" "$$PWD/matthew-nestor-retail.html" "$$PWD/public/matthew-nestor-retail.html" "$$PWD/matthew-nestor-retail.pdf" "$$PWD/public/matthew-nestor-retail.pdf" "$$PWD/public/photo.jpg" "$$PWD"/qemu_*
 	find public/ -name "Sample*.pdf" -exec rm -f '{}' \;

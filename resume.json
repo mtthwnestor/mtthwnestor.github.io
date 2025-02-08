@@ -2,12 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Matthew Nestor",
-    "label": "Documentation Technical Lead",
+    "label": "Technical Communications Expert",
     "image": "photo.jpg",
     "email": "mtthwnestor@gmail.com",
     "phone": "+1 (253) 632-0664",
     "url": "https://matt.piperpages.net/cv/",
-    "summary": "I am a highly detailed technical writer and programmer. I have implemented, trained, and maintained a full docs-as-code workflow for a SaaS business's Help Center / Knowledge Base, including theme customizations. At the same time I continued to write documentation for complex topics to educate users.",
+    "summary": "Highly detail-oriented technical writer with experience in developing and implementing doc-as-code workflows for SaaS businesses. Skilled in creating comprehensive, user-friendly documentation that educates and empowers customers. Proven ability to integrate custom themes and maintain a seamless user experience across various Help Center/Knowledge Base platforms.",
     "location": {
       "address": "1128 W Michigan Ave",
       "postalCode": "MI 48915",
@@ -40,14 +40,13 @@
       "startDate": "2022-07-31",
       "endDate": "2024-05-17",
       "highlights": [
-        "Markdown / HTML / CSS / JavaScript / Liquid",
-        "Knowledge Base / Help Center",
-        "Docs as Code / Jekyll",
-        "DevOps / Docker",
-        "Python / API"
+        "Collaborate across teams, including engineering, marketing, and ops to ensure timely updates and coverage of new features.",
+        "Lead efforts to restructure content for improved usability, accessibility, and efficiency.",
+        "Create and maintain a Help Center / Knowledge Base using a docs-as-code workflow from scratch.",
+        "Develop scripts, using Python and JavaScript, for detailed and accurate reporting, automation, testing, and publishing via API."
       ],
       "summary": "ClickFunnels is a marketing/ecommerce SaaS company. I created, maintained, and improved the Help Center / Knowledge Base using a docs-as-code workflow from scratch.",
-      "url": "https://www.linkedin.com/company/7793713",
+      "url": "https://www.clickfunnels.com/",
       "location": "Remote"
     },
     {
@@ -57,7 +56,7 @@
       "endDate": "2022-10-31",
       "highlights": [],
       "summary": null,
-      "url": "https://www.linkedin.com/company/7793713",
+      "url": "https://www.clickfunnels.com/",
       "location": "Remote"
     },
     {
@@ -65,9 +64,12 @@
       "position": "Help Desk Specialist",
       "startDate": "2018-03-31",
       "endDate": "2020-05-31",
-      "highlights": ["PowerShell", "Networking", "Hardware / Software / IT"],
-      "summary": "Adna Technologies is a MSP, fully managing local business's IT needs. I provided technical support for a wide range of software and technologies, adapting quickly to meet unique client requirements and find solutions. At the same time, I created and maintained detailed documentation and notes, improving efficiency and ensuring high-quality customer support. To help improve efficiency, I developed PowerShell scripts and custom tools maintained with Git, increasing automation and streamlining internal processes.",
-      "url": "https://www.linkedin.com/company/563278",
+      "highlights": [
+        "Created and maintained detailed documentation and notes, improving efficiency and ensuring high-quality customer support.",
+        "Developed PowerShell scripts and custom tools, maintained with Git, to improve efficiency and automation."
+      ],
+      "summary": "Adna Technologies is a MSP, fully managing local business's IT needs. I provided technical support for a wide range of software and technologies, adapting quickly to meet unique client requirements and find solutions.",
+      "url": "https://www.teamadna.com/",
       "location": "Lansing, Michigan"
     },
     {
@@ -76,14 +78,11 @@
       "startDate": "2016-05-31",
       "endDate": "2017-02-28",
       "highlights": [
-        "Networking",
-        "Python",
-        "Raspberry Pi",
-        "Educational",
-        "Electronics"
+        "Set up, configure, and troubleshoot wireless networks, computers, and devices, ensuring smooth operation of life-size animatronics and attractions.",
+        "Build and maintain an educational trivia game with a Raspberry Pi using GPIO, Bash, Python, HTML / CSS, and JavaScript."
       ],
-      "summary": "Jurassic Quest is a travelling dinosaur exhibit, providing entertainment and education for children and people of all ages. I set up, configured, and troubleshooted wireless networks, computers, and devices, ensuring smooth operation of life-size animatronics and attractions. My main project was building and maintaining an educational trivia game with a Raspberry Pi using GPIO, Bash, Python, HTML / CSS, and JavaScript, engaging audiences of all ages. At the same time, I repaired and replaced damaged electronics and equipment, ensuring a high-quality educational experience for attendees.",
-      "url": "https://www.linkedin.com/company/6585658",
+      "summary": "Jurassic Quest is a travelling dinosaur exhibit, providing entertainment and education for children and people of all ages. I set up, repaired and replaced damaged electronics and equipment, ensuring a high-quality educational experience for attendees.",
+      "url": "https://www.jurassicquest.com/",
       "location": "Travel"
     },
     {
@@ -93,7 +92,7 @@
       "endDate": "2016-04-30",
       "highlights": [],
       "summary": "During my time here, I followed and enforced health and safety regulations. I was also responsible for tracking company cash, product, and employees. This role required me to delegate tasks and maintain overall efficiency. I also ensured accurate data entry into POS software.",
-      "url": "https://www.linkedin.com/company/162835",
+      "url": "https://www.bk.com/",
       "location": "Tacoma, Washington"
     }
   ],
@@ -116,35 +115,47 @@
     {
       "name": "Docs-as-Code",
       "level": "Master",
-      "keywords": [
-        "Jekyll",
-        "Markdown",
-        "Liquid",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "YAML"
-      ]
+      "keywords": ["Gatsby", "Jekyll", "JSX", "MDX", "YAML"]
     },
     {
-      "name": "GitHub",
+      "name": "Git",
       "level": "Intermediate",
-      "keywords": ["Git", "Automation", "CI / CD", "Collaboration"]
+      "keywords": [
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Automation",
+        "Actions",
+        "CI / CD",
+        "Collaboration"
+      ]
     },
     {
       "name": "Web Development",
       "level": "Intermediate",
-      "keywords": ["Markdown", "Liquid", "HTML", "CSS", "JavaScript"]
+      "keywords": [
+        "Markdown",
+        "React",
+        "Liquid",
+        "HTML",
+        "CSS",
+        "Tailwind",
+        "JavaScript",
+        "JSX",
+        "MDX"
+      ]
     },
     {
-      "name": "Python",
+      "name": "Scripting",
       "level": "Intermediate",
-      "keywords": ["API", "JSON", "Automation"]
-    },
-    {
-      "name": "JavaScript",
-      "level": "Intermediate",
-      "keywords": ["API", "JSON"]
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "PowerShell",
+        "API",
+        "JSON",
+        "Automation"
+      ]
     },
     {
       "name": "Video Editing",
@@ -168,7 +179,7 @@
     {
       "name": "DevOps",
       "level": "Master",
-      "keywords": ["Docker", "make", "Bash", "GitHub", "YAML"]
+      "keywords": ["Docker", "make", "Bash", "Git", "YAML"]
     },
     {
       "name": "AI",
@@ -182,6 +193,11 @@
         "API",
         "LangChain"
       ]
+    },
+    {
+      "name": "IT",
+      "level": "Intermediate",
+      "keywords": ["Networking", "Linux", "Windows"]
     }
   ],
   "languages": [
@@ -201,7 +217,7 @@
     },
     {
       "name": "Gaming",
-      "keywords": ["Nvidia", "Open Source"]
+      "keywords": ["Nvidia", "Steam", "Open Source"]
     }
   ],
   "references": [
@@ -220,7 +236,9 @@
       "startDate": "2024-01-01",
       "endDate": "2024-05-17",
       "description": "ClickFunnels Help Center content.",
-      "highlights": ["Implemented and trained others from scratch."],
+      "highlights": [
+        "Implemented and trained others to use a docs-as-code workflow."
+      ],
       "url": "https://www.github.com/mtthwnestor/cf2-docs"
     }
   ],

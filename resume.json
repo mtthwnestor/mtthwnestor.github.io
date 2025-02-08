@@ -36,6 +36,7 @@
   "work": [
     {
       "name": "ClickFunnels",
+      "description": "An ecommerce/marketing SaaS company.",
       "position": "Documentation Technical Lead",
       "startDate": "2022-07-31",
       "endDate": "2024-05-17",
@@ -45,7 +46,7 @@
         "Create and maintain a Help Center / Knowledge Base using a docs-as-code workflow from scratch.",
         "Develop scripts, using Python and JavaScript, for detailed and accurate reporting, automation, testing, and publishing via API."
       ],
-      "summary": "ClickFunnels is a marketing/ecommerce SaaS company. I created, maintained, and improved the Help Center / Knowledge Base using a docs-as-code workflow from scratch.",
+      "summary": "I created, maintained, and improved the Help Center / Knowledge Base using a docs-as-code workflow from scratch.",
       "url": "https://www.clickfunnels.com/",
       "location": "Remote"
     },
@@ -61,6 +62,7 @@
     },
     {
       "name": "Adna Technologies",
+      "description": "A fully managed IT (MSP) company.",
       "position": "Help Desk Specialist",
       "startDate": "2018-03-31",
       "endDate": "2020-05-31",
@@ -68,12 +70,13 @@
         "Created and maintained detailed documentation and notes, improving efficiency and ensuring high-quality customer support.",
         "Developed PowerShell scripts and custom tools, maintained with Git, to improve efficiency and automation."
       ],
-      "summary": "Adna Technologies is a MSP, fully managing local business's IT needs. I provided technical support for a wide range of software and technologies, adapting quickly to meet unique client requirements and find solutions.",
+      "summary": "I provided technical support for a wide range of software and technologies, adapting quickly to meet unique client requirements and find solutions.",
       "url": "https://www.teamadna.com/",
       "location": "Lansing, Michigan"
     },
     {
       "name": "Jurassic Quest",
+      "description": "A travelling dinosaur exhibit.",
       "position": "Electrical and IT",
       "startDate": "2016-05-31",
       "endDate": "2017-02-28",
@@ -81,7 +84,7 @@
         "Set up, configure, and troubleshoot wireless networks, computers, and devices, ensuring smooth operation of life-size animatronics and attractions.",
         "Build and maintain an educational trivia game with a Raspberry Pi using GPIO, Bash, Python, HTML / CSS, and JavaScript."
       ],
-      "summary": "Jurassic Quest is a travelling dinosaur exhibit, providing entertainment and education for children and people of all ages. I set up, repaired and replaced damaged electronics and equipment, ensuring a high-quality educational experience for attendees.",
+      "summary": "I set up, repaired and replaced damaged electronics and equipment, ensuring a high-quality educational experience for attendees.",
       "url": "https://www.jurassicquest.com/",
       "location": "Travel"
     },
@@ -100,8 +103,9 @@
   "education": [
     {
       "institution": "Decatur High School",
-      "area": "Federal Way",
+      "area": "",
       "studyType": "High School",
+      "url": "https://dhs.fwps.org/",
       "startDate": "2007",
       "endDate": "2011",
       "score": "",
@@ -233,12 +237,16 @@
   "projects": [
     {
       "name": "cf2-docs",
+      "type": "documentation",
+      "entity": "ClickFunnels",
       "startDate": "2024-01-01",
       "endDate": "2024-05-17",
       "description": "ClickFunnels Help Center content.",
+      "roles": ["Project Lead", "Writer"],
       "highlights": [
         "Implemented and trained others to use a docs-as-code workflow."
       ],
+      "keywords": ["Jekyll", "Liquid", "Markdown", "HTML", "CSS", "JavaScript"],
       "url": "https://www.github.com/mtthwnestor/cf2-docs"
     }
   ],

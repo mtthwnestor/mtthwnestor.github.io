@@ -3,10 +3,12 @@
   "type": "module",
   "scripts": {
     "init": "resumed init",
-    "pdf-export": "node pdf-export.js"
+    "pdf-export": "node export-pdf.js",
+    "docx-export": "node export-docx.js"
   },
   "devDependencies": {
     "@jsonresume/jsonresume-theme-class": "^0.4.2",
+    "html-to-docx": "^1.8.0",
     "jsonresume-theme-even": "^0.23.0",
     "puppeteer": "^22.15.0",
     "resumed": "^3.0.1"

@@ -36,8 +36,16 @@ pdf:
 		docker run --rm -i --init --cap-add=SYS_ADMIN --user $$(id -u):$$(id -g) -w /app -v "$$PWD":/app -e XDG_CONFIG_HOME=/tmp/.chromium -e PUPPETEER_CACHE_DIR="/app/.cache/puppeteer" $(PUPPETEER_IMAGE) /bin/bash -c "npx puppeteer browsers install chrome && npm run pdf-export"; \
 	fi
 
-resume:
+docx:
 	make pdf
+	@if [ "$(UNAME)" = "Darwin" ]; then \
+		colima start; \
+	fi
+		docker run --rm -i --init --user $$(id -u):$$(id -g) -w /app -v "$$PWD":/app -e XDG_CONFIG_HOME=/tmp/.chromium -e PUPPETEER_CACHE_DIR="/app/.cache/puppeteer" $(NODE_IMAGE) /bin/bash -c "npm run docx-export"; \
+
+
+resume:
+	make docx
 	cp photo.jpg public/
 	mv index.html public/
 	mv matthew-nestor.html public/

@@ -8,8 +8,7 @@ try {
 } catch (err) {
     console.error(err);
 }
-console.log(html)
-const outputPath = "./index.docx";
+const outputPath = "./resume.docx";
 
 const htmlString = html;
 const documentOptions = {

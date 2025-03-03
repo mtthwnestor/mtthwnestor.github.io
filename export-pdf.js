@@ -1,59 +1,43 @@
-import { promises as fs } from "fs";
+import {promises as fs} from "fs";
 import * as path from "path";
-import { cwd } from "process";
-import * as theme from "jsonresume-theme-even";
-import * as theme_ats from "@jsonresume/jsonresume-theme-class";
+import {cwd} from "process";
 import puppeteer from "puppeteer";
-import { render } from "resumed";
-
-const resume = JSON.parse(await fs.readFile("resume.json", "utf-8"));
-const html = await render(resume, theme);
-const html_ats = await render(resume, theme_ats);
-
-const resume_retail = JSON.parse(
-  await fs.readFile("resume-retail.json", "utf-8")
-);
-const html_retail = await render(resume_retail, theme);
-const html_ats_retail = await render(resume_retail, theme_ats);
 
 const browser = await puppeteer.launch({
-  args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
 });
 const page = await browser.newPage();
 
 //await page.setContent(html, { waitUntil: 'networkidle0' })
+
+// resume.pdf
 await page.goto(`file:${path.join(cwd(), "index.html")}`, {
-  waitUntil: "load",
-  timeout: 0,
+    waitUntil: "load", timeout: 0,
 });
-await page.pdf({ path: "resume.pdf", format: "letter", printBackground: true });
+await page.pdf({path: "resume.pdf", format: "letter", printBackground: true});
+
+// matthew-nestor.pdf
 await page.goto(`file:${path.join(cwd(), "matthew-nestor.html")}`, {
-  waitUntil: "load",
-  timeout: 0,
+    waitUntil: "load", timeout: 0,
 });
 await page.pdf({
-  path: "matthew-nestor.pdf",
-  format: "letter",
-  printBackground: true,
+    path: "matthew-nestor.pdf", format: "letter", printBackground: true,
 });
 
+// resume-retail.pdf
 await page.goto(`file:${path.join(cwd(), "index-retail.html")}`, {
-  waitUntil: "load",
-  timeout: 0,
+    waitUntil: "load", timeout: 0,
 });
 await page.pdf({
-  path: "resume-retail.pdf",
-  format: "letter",
-  printBackground: true,
+    path: "resume-retail.pdf", format: "letter", printBackground: true,
 });
+
+// matthew-nestor-retail.pdf
 await page.goto(`file:${path.join(cwd(), "matthew-nestor-retail.html")}`, {
-  waitUntil: "load",
-  timeout: 0,
+    waitUntil: "load", timeout: 0,
 });
 await page.pdf({
-  path: "matthew-nestor-retail.pdf",
-  format: "letter",
-  printBackground: true,
+    path: "matthew-nestor-retail.pdf", format: "letter", printBackground: true,
 });
 
 await browser.close();

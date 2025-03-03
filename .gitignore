@@ -11,19 +11,27 @@
 # Generated site files
 /index.html
 /resume.pdf
+/resume.docx
 /matthew-nestor.html
 /matthew-nestor.pdf
+/matthew-nestor.docx
 /index-retail.html
 /resume-retail.pdf
+/resume-retail.docx
 /matthew-nestor-retail.html
 /matthew-nestor-retail.pdf
+/matthew-nestor-retail.docx
 /public/index.html
 /public/matthew-nestor.html
 /public/index-retail.html
 /public/matthew-nestor-retail.html
 /public/photo.jpg
 /public/*.pdf
+/public/*.docx
 
 # Puppeteer
 /qemu_*
 /.pki/
+
+# Other
+/.env.production

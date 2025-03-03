@@ -2,14 +2,12 @@ import * as fs from 'fs';
 import HTMLtoDOCX from "html-to-docx";
 
 
-let html = "test";
-await fs.readFile('./index.html', 'utf8', (err, data) => {
-    if (err) {
-        console.error("An error occurred:", err);
-        return;
-    }
-    html = data; // FIXME: I need to modify the outer "html" variable, but it is out of scope...
-});
+let html = ""
+try {
+    html = fs.readFileSync('./index.html', 'utf8');
+} catch (err) {
+    console.error(err);
+}
 console.log(html)
 const outputPath = "./index.docx";
 
@@ -20,9 +18,8 @@ const documentOptions = {
     keywords: ["resume", "cv"],
     description: "Matthew Nestor's CV.",
     font: "sans-serif",
-    fontSize: 14
+    fontSize: 24
 };
-const footerHTMLString = "<p></p>";
 
 (async () => {
     const fileBuffer = await HTMLtoDOCX(htmlString, null, documentOptions);

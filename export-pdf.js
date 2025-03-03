@@ -1,4 +1,3 @@
-import {promises as fs} from "fs";
 import * as path from "path";
 import {cwd} from "process";
 import puppeteer from "puppeteer";

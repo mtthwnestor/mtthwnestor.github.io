@@ -7,7 +7,7 @@
     "email": "mtthwnestor@gmail.com",
     "phone": "+1 (253) 632-0664",
     "url": "https://matt.piperpages.net/cv/",
-    "summary": "Highly detail-oriented technical writer with experience in developing and implementing doc-as-code workflows for SaaS businesses. Skilled in creating comprehensive, user-friendly documentation that educates and empowers customers. Proven ability to integrate custom themes and maintain a seamless user experience across various Help Center/Knowledge Base platforms.",
+    "summary": "Highly detail-oriented technical writer with experience in developing and implementing doc-as-code workflows for SaaS businesses. Skilled in creating comprehensive, user-friendly documentation that educates and empowers readers. Proven ability to integrate customizations and maintain a seamless user experience across various Help Center or Knowledge Base platforms.",
     "location": {
       "address": "1128 W Michigan Ave",
       "postalCode": "MI 48915",
@@ -36,17 +36,17 @@
   "work": [
     {
       "name": "ClickFunnels",
-      "description": "An ecommerce/marketing SaaS company.",
+      "description": "An e-commerce and marketing SaaS company.",
       "position": "Documentation Technical Lead",
       "startDate": "2022-07-31",
       "endDate": "2024-05-17",
       "highlights": [
         "Collaborate across teams, including engineering, marketing, and ops to ensure timely updates and coverage of new features.",
         "Lead efforts to restructure content for improved usability, accessibility, and efficiency.",
-        "Create and maintain a Help Center / Knowledge Base using a docs-as-code workflow from scratch.",
-        "Develop scripts, using Python and JavaScript, for detailed and accurate reporting, automation, testing, and publishing via API."
+        "Create and maintain a Help Center and Knowledge Base using a docs-as-code workflow.",
+        "Develop scripts, using Python, JavaScript, and more, for detailed and accurate reporting, automation, testing, and publishing via API."
       ],
-      "summary": "I created, maintained, and improved the Help Center / Knowledge Base using a docs-as-code workflow from scratch.",
+      "summary": null,
       "url": "https://www.clickfunnels.com/",
       "location": "Remote"
     },
@@ -55,7 +55,9 @@
       "position": "Technical Support Specialist",
       "startDate": "2021-09-23",
       "endDate": "2022-10-31",
-      "highlights": [],
+      "highlights": [
+        "Provide world-class technical support for a SaaS platform to various entrepreneurs of varying skill levels."
+      ],
       "summary": null,
       "url": "https://www.clickfunnels.com/",
       "location": "Remote"
@@ -70,7 +72,7 @@
         "Created and maintained detailed documentation and notes, improving efficiency and ensuring high-quality customer support.",
         "Developed PowerShell scripts and custom tools, maintained with Git, to improve efficiency and automation."
       ],
-      "summary": "I provided technical support for a wide range of software and technologies, adapting quickly to meet unique client requirements and find solutions.",
+      "summary": null,
       "url": "https://www.teamadna.com/",
       "location": "Lansing, Michigan"
     },
@@ -82,21 +84,11 @@
       "endDate": "2017-02-28",
       "highlights": [
         "Set up, configure, and troubleshoot wireless networks, computers, and devices, ensuring smooth operation of life-size animatronics and attractions.",
-        "Build and maintain an educational trivia game with a Raspberry Pi using GPIO, Bash, Python, HTML / CSS, and JavaScript."
+        "Build and maintain an educational trivia game with a Raspberry Pi using GPIO, Bash, Python, HTML, CSS, and JavaScript."
       ],
-      "summary": "I set up, repaired and replaced damaged electronics and equipment, ensuring a high-quality educational experience for attendees.",
+      "summary": null,
       "url": "https://www.jurassicquest.com/",
       "location": "Travel"
-    },
-    {
-      "name": "Burger King Corporation",
-      "position": "Shift Manager",
-      "startDate": "2012-01-31",
-      "endDate": "2016-04-30",
-      "highlights": [],
-      "summary": "During my time here, I followed and enforced health and safety regulations. I was also responsible for tracking company cash, product, and employees. This role required me to delegate tasks and maintain overall efficiency. I also ensured accurate data entry into POS software.",
-      "url": "https://www.bk.com/",
-      "location": "Tacoma, Washington"
     }
   ],
   "volunteer": [],
@@ -117,19 +109,47 @@
   "publications": [],
   "skills": [
     {
+      "name": "Technical Writing",
+      "level": "Master",
+      "keywords": [
+        "SaaS",
+        "Help Center",
+        "Knowledge Base",
+        "Zendesk",
+        "Freshdesk",
+        "Diátaxis",
+        "Information Development",
+        "SEO"
+      ]
+    },
+    {
       "name": "Docs-as-Code",
       "level": "Master",
-      "keywords": ["Gatsby", "Jekyll", "JSX", "MDX", "YAML"]
+      "keywords": [
+        "Gatsby",
+        "Jekyll",
+        "JSX",
+        "MDX",
+        "YAML",
+        "API",
+        "Markdown",
+        "JavaScript",
+        "React",
+        "Liquid",
+        "Agile"
+      ]
+    },
+    {
+      "name": "Video",
+      "level": "Intermediate",
+      "keywords": ["Adobe", "Premiere", "Camtasia", "SnagIt", "ffmpeg"]
     },
     {
       "name": "Git",
       "level": "Intermediate",
       "keywords": [
-        "Git",
         "GitHub",
         "GitLab",
-        "Automation",
-        "Actions",
         "CI / CD",
         "Collaboration"
       ]
@@ -138,7 +158,6 @@
       "name": "Web Development",
       "level": "Intermediate",
       "keywords": [
-        "Markdown",
         "React",
         "Liquid",
         "HTML",
@@ -162,25 +181,6 @@
       ]
     },
     {
-      "name": "Video Editing",
-      "level": "Intermediate",
-      "keywords": ["Adobe", "Premiere", "Camtasia", "SnagIt", "ffmpeg"]
-    },
-    {
-      "name": "Technical Writing",
-      "level": "Master",
-      "keywords": [
-        "SaaS",
-        "Help Center",
-        "Knowledge Base",
-        "Zendesk",
-        "Freshdesk",
-        "Agile",
-        "Diátaxis",
-        "Information Development"
-      ]
-    },
-    {
       "name": "DevOps",
       "level": "Master",
       "keywords": ["Docker", "make", "Bash", "Git", "YAML"]
@@ -193,15 +193,9 @@
         "LLM",
         "RAG",
         "Ollama",
-        "Docker",
         "API",
         "LangChain"
       ]
-    },
-    {
-      "name": "IT",
-      "level": "Intermediate",
-      "keywords": ["Networking", "Linux", "Windows"]
     }
   ],
   "languages": [

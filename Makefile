@@ -24,9 +24,9 @@ html:
 		colima start; \
 	fi
 	@$(DOCKER_RUN) --name mtthwnestor-resume $(NODE_IMAGE) /bin/bash -c "npm ci"
-	@$(DOCKER_RUN) --name mtthwnestor-resume $(NODE_IMAGE) /bin/bash -c "npx resumed --theme jsonresume-theme-even --output index.html"
+	@$(DOCKER_RUN) --name mtthwnestor-resume $(NODE_IMAGE) /bin/bash -c "npx resumed --theme jsonresume-theme-jacrys --output index.html"
 	@$(DOCKER_RUN) --name mtthwnestor-resume $(NODE_IMAGE) /bin/bash -c "npx resumed --theme @jsonresume/jsonresume-theme-class --output matthew-nestor.html"
-	@$(DOCKER_RUN) --name mtthwnestor-resume $(NODE_IMAGE) /bin/bash -c "npx resumed resume-retail.json --theme jsonresume-theme-even --output index-retail.html"
+	@$(DOCKER_RUN) --name mtthwnestor-resume $(NODE_IMAGE) /bin/bash -c "npx resumed resume-retail.json --theme jsonresume-theme-jacrys --output index-retail.html"
 	@$(DOCKER_RUN) --name mtthwnestor-resume $(NODE_IMAGE) /bin/bash -c "npx resumed resume-retail.json --theme @jsonresume/jsonresume-theme-class --output matthew-nestor-retail.html"
 
 pdf:

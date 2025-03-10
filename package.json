@@ -10,6 +10,7 @@
     "@jsonresume/jsonresume-theme-class": "^0.4.2",
     "html-to-docx": "^1.8.0",
     "jsonresume-theme-even": "^0.23.0",
+    "jsonresume-theme-jacrys": "^1.0.4",
     "puppeteer": "^22.15.0",
     "resumed": "^3.0.1"
   }

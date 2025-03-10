@@ -22,9 +22,9 @@ json_to_html:
       user: root
   stage: json-to-html
   script:
-    - npx resumed --theme jsonresume-theme-even --output index.html
+    - npx resumed --theme jsonresume-theme-jacrys --output index.html
     - npx resumed --theme @jsonresume/jsonresume-theme-class --output matthew-nestor.html
-    - npx resumed resume-retail.json --theme jsonresume-theme-even --output index-retail.html
+    - npx resumed resume-retail.json --theme jsonresume-theme-jacrys --output index-retail.html
     - npx resumed resume-retail.json --theme @jsonresume/jsonresume-theme-class --output matthew-nestor-retail.html
   artifacts:
     when: on_success

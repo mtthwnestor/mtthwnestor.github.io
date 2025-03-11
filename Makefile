@@ -24,10 +24,7 @@ html:
 		colima start; \
 	fi
 	@$(DOCKER_RUN) --name mtthwnestor-resume $(NODE_IMAGE) /bin/bash -c "npm ci"
-	@$(DOCKER_RUN) --name mtthwnestor-resume $(NODE_IMAGE) /bin/bash -c "npx resumed --theme jsonresume-theme-jacrys --output index.html"
-	@$(DOCKER_RUN) --name mtthwnestor-resume $(NODE_IMAGE) /bin/bash -c "npx resumed --theme @jsonresume/jsonresume-theme-class --output matthew-nestor.html"
-	@$(DOCKER_RUN) --name mtthwnestor-resume $(NODE_IMAGE) /bin/bash -c "npx resumed resume-retail.json --theme jsonresume-theme-jacrys --output index-retail.html"
-	@$(DOCKER_RUN) --name mtthwnestor-resume $(NODE_IMAGE) /bin/bash -c "npx resumed resume-retail.json --theme @jsonresume/jsonresume-theme-class --output matthew-nestor-retail.html"
+	@$(DOCKER_RUN) --name mtthwnestor-resume $(NODE_IMAGE) /bin/bash -c "npm run html-export"
 
 pdf:
 	make html
@@ -43,30 +40,22 @@ docx:
 	@if [ "$(UNAME)" = "Darwin" ]; then \
 		colima start; \
 	fi
-	@$(DOCKER_RUN) $(PANDOC_IMAGE) index.html -o resume.docx
-	@$(DOCKER_RUN) $(PANDOC_IMAGE) matthew-nestor.html -o matthew-nestor.docx
-	@$(DOCKER_RUN) $(PANDOC_IMAGE) index-retail.html -o resume-retail.docx
-	@$(DOCKER_RUN) $(PANDOC_IMAGE) matthew-nestor-retail.html -o matthew-nestor-retail.docx
+	@$(DOCKER_RUN) $(PANDOC_IMAGE) resume0.html -o resume0.docx
+	@$(DOCKER_RUN) $(PANDOC_IMAGE) resume1.html -o resume1.docx
+	@$(DOCKER_RUN) $(PANDOC_IMAGE) resume-retail0.html -o resume-retail0.docx
+	@$(DOCKER_RUN) $(PANDOC_IMAGE) resume-retail1.html -o resume-retail1.docx
 
 resume:
 	make html
 	make pdf
 	make docx
 	cp photo.jpg public/
-	mv index.html public/
-	mv resume.docx public/
-	mv matthew-nestor.html public/
-	mv matthew-nestor.docx public/
-	mv index-retail.html public/
-	mv resume-retail.docx public/
-	mv matthew-nestor-retail.html public/
-	mv matthew-nestor-retail.docx public/
+	find . -maxdepth 1 -name "resume*.html" -exec mv '{}' public/ \;
+	cp public/resume0.html public/index.html
+	find . -maxdepth 1 -name "resume*.docx" -exec mv '{}' public/ \;
 	find . -maxdepth 1 -name "Sample*.pdf" -exec cp '{}' public/ \;
 	@if [ "$(UNAME)" != "Darwin" ]; then \
-		mv resume.pdf public/; \
-		mv matthew-nestor.pdf public/; \
-		mv resume-retail.pdf public/; \
-		mv matthew-nestor-retail.pdf public/; \
+		find . -maxdepth 1 -name "resume*.pdf" -exec mv '{}' public/ \;; \
 	fi
 
 ollama:
@@ -86,5 +75,8 @@ clean:
 	make clean-python
 	make clean-node
 	if test -d .cache/*; then find $$PWD/.cache/* -maxdepth 0 -type d -exec rm -rf '{}' \;; fi
-	rm -f "$$PWD/index.html" "$$PWD/public/index.html" "$$PWD/resume.pdf" "$$PWD/public/resume.pdf" "$$PWD/resume.docx" "$$PWD/public/resume.docx" "$$PWD/matthew-nestor.html" "$$PWD/public/matthew-nestor.html" "$$PWD/matthew-nestor.pdf" "$$PWD/public/matthew-nestor.pdf" "$$PWD/matthew-nestor.docx" "$$PWD/public/matthew-nestor.docx" "$$PWD/index-retail.html" "$$PWD/public/index-retail.html" "$$PWD/resume-retail.pdf" "$$PWD/public/resume-retail.pdf" "$$PWD/resume-retail.docx" "$$PWD/public/resume-retail.docx" "$$PWD/matthew-nestor-retail.html" "$$PWD/public/matthew-nestor-retail.html" "$$PWD/matthew-nestor-retail.pdf" "$$PWD/public/matthew-nestor-retail.pdf" "$$PWD/matthew-nestor-retail.docx" "$$PWD/public/matthew-nestor-retail.docx" "$$PWD/public/photo.jpg" "$$PWD"/qemu_*
+	find public/ -name "resume*.html" -exec rm -f '{}' \;
+	find public/ -name "resume*.pdf" -exec rm -f '{}' \;
+	find public/ -name "resume*.docx" -exec rm -f '{}' \;
+	rm -f "$$PWD/public/index.html" "$$PWD/public/photo.jpg" "$$PWD"/qemu_*
 	find public/ -name "Sample*.pdf" -exec rm -f '{}' \;

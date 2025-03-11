@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Matthew Nestor",
-    "label": "Technical Communications Expert",
+    "label": "Technical Writer",
     "image": "photo.jpg",
     "email": "mtthwnestor@gmail.com",
     "phone": "+1 (253) 632-0664",
@@ -87,7 +87,7 @@
       "highlights": [
         "Created and maintained detailed documentation and notes, improving efficiency and ensuring high-quality customer support.",
         "Developed PowerShell scripts and custom tools, maintained with Git, to improve efficiency and automation.",
-        "Administrate and utilize Microsoft Office and Sharepoint for file sharing, collaboration and organization.",
+        "Administrate and utilize Sharepoint for file sharing, collaboration and organization.",
         "Administrate and utilize Microsoft Outlook for communication across multiple businesses."
       ],
       "summary": null,

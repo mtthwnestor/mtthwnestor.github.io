@@ -3,11 +3,13 @@
   "type": "module",
   "scripts": {
     "init": "resumed init",
+    "html-export": "node export-html.js",
     "pdf-export": "node export-pdf.js",
     "docx-export": "node export-docx.js"
   },
   "devDependencies": {
     "@jsonresume/jsonresume-theme-class": "^0.4.2",
+    "glob": "^11.0.1",
     "html-to-docx": "^1.8.0",
     "jsonresume-theme-even": "^0.23.0",
     "jsonresume-theme-jacrys": "^1.0.4",

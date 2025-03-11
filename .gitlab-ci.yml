@@ -22,18 +22,12 @@ json_to_html:
       user: root
   stage: json-to-html
   script:
-    - npx resumed --theme jsonresume-theme-jacrys --output index.html
-    - npx resumed --theme @jsonresume/jsonresume-theme-class --output matthew-nestor.html
-    - npx resumed resume-retail.json --theme jsonresume-theme-jacrys --output index-retail.html
-    - npx resumed resume-retail.json --theme @jsonresume/jsonresume-theme-class --output matthew-nestor-retail.html
+    - npm run html-export
   artifacts:
     when: on_success
     expire_in: 2 days
     paths:
-      - "index.html"
-      - "matthew-nestor.html"
-      - "index-retail.html"
-      - "matthew-nestor-retail.html"
+      - "resume*.html"
   environment: production
 
 html_to_pdf:
@@ -51,10 +45,7 @@ html_to_pdf:
     when: on_success
     expire_in: 2 days
     paths:
-      - "resume.pdf"
-      - "matthew-nestor.pdf"
-      - "resume-retail.pdf"
-      - "matthew-nestor-retail.pdf"
+      - "resume*.pdf"
   environment: production
 
 pages:
@@ -67,7 +58,8 @@ pages:
     - json_to_html
     - html_to_pdf
   script:
-    - cp photo.jpg index.html resume.pdf matthew-nestor.html matthew-nestor.pdf index-retail.html resume-retail.pdf matthew-nestor-retail.html matthew-nestor-retail.pdf public/
+    - cp photo.jpg resume*.html resume*.pdf public/
+    - cp public/resume0.html public/index.html
     - find . -name "Sample*.pdf" -exec cp '{}' public/ \;
   artifacts:
     when: on_success

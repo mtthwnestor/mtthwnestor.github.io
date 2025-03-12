@@ -40,10 +40,9 @@ docx:
 	@if [ "$(UNAME)" = "Darwin" ]; then \
 		colima start; \
 	fi
-	@$(DOCKER_RUN) $(PANDOC_IMAGE) resume0.html -o resume0.docx
-	@$(DOCKER_RUN) $(PANDOC_IMAGE) resume1.html -o resume1.docx
-	@$(DOCKER_RUN) $(PANDOC_IMAGE) resume-retail0.html -o resume-retail0.docx
-	@$(DOCKER_RUN) $(PANDOC_IMAGE) resume-retail1.html -o resume-retail1.docx
+	@for file in resume*.html; do \
+		$(DOCKER_RUN) $(PANDOC_IMAGE) "$$file" -o "$${file%.html}.docx"; \
+	done
 
 resume:
 	make html

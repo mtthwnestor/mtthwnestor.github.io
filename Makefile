@@ -75,6 +75,9 @@ clean:
 	make clean-python
 	make clean-node
 	if test -d .cache/*; then find $$PWD/.cache/* -maxdepth 0 -type d -exec rm -rf '{}' \;; fi
+	find . -name "resume*.html" -exec rm -f '{}' \;
+	find . -name "resume*.pdf" -exec rm -f '{}' \;
+	find . -name "resume*.docx" -exec rm -f '{}' \;
 	find public/ -name "resume*.html" -exec rm -f '{}' \;
 	find public/ -name "resume*.pdf" -exec rm -f '{}' \;
 	find public/ -name "resume*.docx" -exec rm -f '{}' \;

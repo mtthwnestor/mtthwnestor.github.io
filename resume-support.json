@@ -1,0 +1,272 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Matthew Nestor",
+    "label": "Customer Communications Expert",
+    "image": "photo.jpg",
+    "email": "mtthwnestor@gmail.com",
+    "phone": "+1 (253) 632-0664",
+    "url": "https://matt.piperpages.net/cv/",
+    "summary": "Highly detail-oriented technical support specialist with experience in IT and SaaS businesses. Skilled in creative problem solving, crafting user-friendly instructions, and meeting critical deadlines.",
+    "location": {
+      "address": "1128 W Michigan Ave",
+      "postalCode": "MI 48915",
+      "city": "Lansing",
+      "countryCode": "US",
+      "region": "Michigan"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "mtthwnestor",
+        "url": "https://www.linkedin.com/in/mtthwnestor/"
+      },
+      {
+        "network": "GitHub",
+        "username": "mtthwnestor",
+        "url": "https://github.com/mtthwnestor"
+      },
+      {
+        "network": "GitLab",
+        "username": "matt",
+        "url": "https://gitlab.piperservers.net/matt"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Outlier AI",
+      "description": "An AI training platform.",
+      "position": "Prompt Trainer",
+      "startDate": "2024-12-14",
+      "endDate": "",
+      "highlights": [
+        "Write and optimize prompts to train LLMs and AI chatbots."
+      ],
+      "summary": null,
+      "url": "https://outlier.ai/",
+      "location": "Remote"
+    },
+    {
+      "name": "ClickFunnels",
+      "description": "An e-commerce and marketing SaaS company.",
+      "position": "Documentation Technical Lead",
+      "startDate": "2022-07-31",
+      "endDate": "2024-05-17",
+      "highlights": [
+        "Collaborate across teams, including engineering, marketing, ops, and other subject matter experts to ensure timely updates and coverage of new features for support teams and a diverse range of end users.",
+        "Lead efforts to restructure content for improved usability, accessibility, and efficiency.",
+        "Create and maintain a Help Center and Knowledge Base using a docs-as-code workflow.",
+        "Create training materials for other writers and staff members.",
+        "Draft, review, revise, and approve new and existing documents while meeting deadlines.",
+        "Develop scripts, using Python, JavaScript, and more, for detailed and accurate reporting with Microsoft Excel compatible spreadsheets, automation, testing, and publishing via API.",
+        "Use Microsoft Word compatible documents for drafts, reviews, comments, etc."
+      ],
+      "summary": null,
+      "url": "https://www.clickfunnels.com/",
+      "location": "Remote"
+    },
+    {
+      "name": "ClickFunnels",
+      "position": "Technical Support Specialist",
+      "startDate": "2021-09-23",
+      "endDate": "2022-10-31",
+      "highlights": [
+        "Provide world-class technical support for a SaaS platform to various entrepreneurs of varying skill levels."
+      ],
+      "summary": null,
+      "url": "https://www.clickfunnels.com/",
+      "location": "Remote"
+    },
+    {
+      "name": "Adna Technologies",
+      "description": "A fully managed IT (MSP) company.",
+      "position": "Help Desk Specialist",
+      "startDate": "2018-03-31",
+      "endDate": "2020-05-31",
+      "highlights": [
+        "Created and maintained detailed documentation and notes, improving efficiency and ensuring high-quality customer support.",
+        "Developed PowerShell scripts and custom tools, maintained with Git, to improve efficiency and automation.",
+        "Administrate and utilize Microsoft Office and Sharepoint for file sharing, collaboration and organization.",
+        "Administrate and utilize Microsoft Outlook for communication across multiple businesses."
+      ],
+      "summary": null,
+      "url": "https://www.teamadna.com/",
+      "location": "Lansing, Michigan"
+    },
+    {
+      "name": "Jurassic Quest",
+      "description": "A traveling dinosaur exhibit.",
+      "position": "Electrical and IT",
+      "startDate": "2016-05-31",
+      "endDate": "2017-02-28",
+      "highlights": [
+        "Set up, configure, and troubleshoot wireless networks, computers, and devices, ensuring smooth operation of life-size animatronics and attractions.",
+        "Build and maintain an educational trivia game with a Raspberry Pi using GPIO, Bash, Python, HTML, CSS, and JavaScript."
+      ],
+      "summary": null,
+      "url": "https://www.jurassicquest.com/",
+      "location": "Travel"
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Decatur High School",
+      "area": "Federal Way",
+      "studyType": "High School",
+      "url": "https://dhs.fwps.org/",
+      "startDate": "2007",
+      "endDate": "2011",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Technical Writing",
+      "level": "Master",
+      "keywords": [
+        "SaaS",
+        "Help Center",
+        "Knowledge Base",
+        "Zendesk",
+        "Freshdesk",
+        "Diátaxis",
+        "Information Development",
+        "SEO",
+        "Microsoft Word"
+      ]
+    },
+    {
+      "name": "Docs-as-Code",
+      "level": "Master",
+      "keywords": [
+        "Gatsby",
+        "Jekyll",
+        "JSX",
+        "MDX",
+        "YAML",
+        "API",
+        "Markdown",
+        "JavaScript",
+        "React",
+        "Liquid",
+        "Agile",
+        "Microsoft Excel"
+      ]
+    },
+    {
+      "name": "Video",
+      "level": "Intermediate",
+      "keywords": ["Adobe", "Premiere", "Camtasia", "SnagIt", "ffmpeg"]
+    },
+    {
+      "name": "Git",
+      "level": "Intermediate",
+      "keywords": [
+        "GitHub",
+        "GitLab",
+        "CI / CD",
+        "Collaboration"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "Intermediate",
+      "keywords": [
+        "React",
+        "Liquid",
+        "HTML",
+        "CSS",
+        "Tailwind",
+        "JavaScript",
+        "JSX",
+        "MDX"
+      ]
+    },
+    {
+      "name": "Scripting",
+      "level": "Intermediate",
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "PowerShell",
+        "API",
+        "JSON",
+        "Automation"
+      ]
+    },
+    {
+      "name": "DevOps",
+      "level": "Master",
+      "keywords": ["Docker", "make", "Bash", "Git", "YAML"]
+    },
+    {
+      "name": "AI",
+      "level": "Intermediate",
+      "keywords": [
+        "Artificial Intelligence",
+        "LLM",
+        "RAG",
+        "Ollama",
+        "API",
+        "LangChain"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Homelab",
+      "keywords": ["Self-hosted", "Networking", "Linux", "Ansible", "Docker"]
+    },
+    {
+      "name": "Open Source",
+      "keywords": ["Linux", "GitLab", "Raspberry Pi"]
+    },
+    {
+      "name": "Gaming",
+      "keywords": ["Nvidia", "Steam", "Open Source"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Robert Paisley, Documentation Lead Analyst at ClickFunnels",
+      "reference": "Matthew is constantly looking to improve himself and the team by learning and sharing skills that benefit us all."
+    },
+    {
+      "name": "Laura Demetrious, Communications Manager at ClickFunnels",
+      "reference": "Matthew does a stellar job of staying on top of new functionalities that are otherwise complex for the average user."
+    }
+  ],
+  "projects": [
+    {
+      "name": "cf2-docs",
+      "type": "documentation",
+      "entity": "ClickFunnels",
+      "startDate": "2024-01-01",
+      "endDate": "2024-05-17",
+      "description": "ClickFunnels Help Center content.",
+      "roles": ["Project Lead", "Writer"],
+      "highlights": [
+        "Implemented and trained others to use a docs-as-code workflow."
+      ],
+      "keywords": ["Jekyll", "Liquid", "Markdown", "HTML", "CSS", "JavaScript"],
+      "url": "https://www.github.com/mtthwnestor/cf2-docs"
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json",
+    "language": "en"
+  }
+}

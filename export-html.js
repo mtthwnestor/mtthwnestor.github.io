@@ -9,6 +9,7 @@ const themes = [theme_main, theme_ats];
 const resume_files = [
   "resume.json",
   "resume-writer.json",
+  "resume-support.json",
   "resume-retail.json",
 ];
 

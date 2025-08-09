@@ -1,16 +1,16 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Matthew Nestor",
+    "name": "Madison Nestor",
     "label": "Technical Writer",
     "image": "photo.jpg",
     "email": "mtthwnestor@gmail.com",
     "phone": "+1 (253) 632-0664",
-    "url": "https://matt.piperpages.net/cv/",
+    "url": "https://mtthwnestor.github.io/",
     "summary": "Highly detail-oriented technical writer with experience in developing and implementing documentation workflows for SaaS businesses. Skilled in creating comprehensive, user-friendly documentation that educates and empowers readers. Proven ability to integrate customizations and maintain a seamless user experience across various Help Center or Knowledge Base platforms.",
     "location": {
-      "address": "1128 W Michigan Ave",
-      "postalCode": "MI 48915",
+      "address": "210 S Clemens Ave",
+      "postalCode": "MI 48912",
       "city": "Lansing",
       "countryCode": "US",
       "region": "Michigan"

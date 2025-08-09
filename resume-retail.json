@@ -1,16 +1,16 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Matthew Nestor",
+    "name": "Madison Nestor",
     "label": "",
     "image": "photo.jpg",
     "email": "mtthwnestor@gmail.com",
     "phone": "+1 (253) 632-0664",
     "url": "",
-    "summary": "Enthusiastic and customer-focused professional with experience in providing exceptional service in dynamic environments. Detail oriented and skilled in inventory management, point-of-sale operations, and maintaining a clean and organized environment.",
+    "summary": "Enthusiastic and customer-focused professional with experience in providing exceptional service in dynamic environments. Detail oriented and skilled in inventory management, point-of-sale operations, team management, and maintaining a clean and organized environment.",
     "location": {
-      "address": "1128 W Michigan Ave",
-      "postalCode": "MI 48915",
+      "address": "210 S Clemens Ave",
+      "postalCode": "MI 48912",
       "city": "Lansing",
       "countryCode": "US",
       "region": "Michigan"
@@ -25,11 +25,24 @@
   },
   "work": [
     {
+      "name": "McDonalds (JMC Hospitality)",
+      "position": "Shift Manager",
+      "startDate": "2025-04-11",
+      "endDate": "",
+      "highlights": [
+        "Ensure all procedures are followed, including critical food safety, cleanliness, Hospitality, and service.",
+        "Train, coach, and coordinate employees to reach store goals."
+      ],
+      "summary": "During my time at McDonalds I ensured food safety, quality, and service goals were reached. This role required me to delegate tasks and maintain overall store efficiency.",
+      "url": "https://www.mcdonalds.com/",
+      "location": "Lansing, Michigan"
+    },
+    {
       "name": "Outlier AI",
       "description": "An AI training platform.",
       "position": "Prompt Trainer",
       "startDate": "2024-12-14",
-      "endDate": "",
+      "endDate": "2025-04-01",
       "highlights": [
         "Write and optimize prompts to train LLMs and AI chatbots."
       ],

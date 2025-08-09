@@ -1,16 +1,16 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Matthew Nestor",
+    "name": "Madison Nestor",
     "label": "Customer Communications Expert",
     "image": "photo.jpg",
     "email": "mtthwnestor@gmail.com",
     "phone": "+1 (253) 632-0664",
-    "url": "https://matt.piperpages.net/cv/",
+    "url": "https://mtthwnestor.github.io/",
     "summary": "Highly detail-oriented technical support specialist with experience in IT and SaaS businesses. Skilled in creative problem solving, crafting user-friendly instructions, and meeting critical deadlines.",
     "location": {
-      "address": "1128 W Michigan Ave",
-      "postalCode": "MI 48915",
+      "address": "210 S Clemens Ave",
+      "postalCode": "MI 48912",
       "city": "Lansing",
       "countryCode": "US",
       "region": "Michigan"

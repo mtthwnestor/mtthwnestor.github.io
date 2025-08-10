@@ -35,11 +35,24 @@
   },
   "work": [
     {
+      "name": "McDonalds (JMC Hospitality)",
+      "position": "Shift Manager",
+      "startDate": "2025-04-11",
+      "endDate": "",
+      "highlights": [
+        "Ensure all procedures are followed, including critical food safety, cleanliness, Hospitality, and service.",
+        "Train, coach, and coordinate employees to reach store goals."
+      ],
+      "summary": "During my time at McDonalds I ensured food safety, quality, and service goals were reached. This role required me to delegate tasks and maintain overall store efficiency.",
+      "url": "https://www.mcdonalds.com/",
+      "location": "Lansing, Michigan"
+    },
+    {
       "name": "Outlier AI",
       "description": "An AI training platform.",
       "position": "Prompt Trainer",
       "startDate": "2024-12-14",
-      "endDate": "",
+      "endDate": "2025-04-01",
       "highlights": [
         "Write and optimize prompts to train LLMs and AI chatbots."
       ],

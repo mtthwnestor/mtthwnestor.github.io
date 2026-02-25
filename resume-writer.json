@@ -4,7 +4,7 @@
     "name": "Madison Nestor",
     "label": "Technical Writer",
     "image": "photo.jpg",
-    "email": "mtthwnestor@gmail.com",
+    "email": "mendoza.madison.n@gmail.com",
     "phone": "+1 (253) 632-0664",
     "url": "https://mtthwnestor.github.io/",
     "summary": "Highly detail-oriented technical writer with experience in developing and implementing documentation workflows for SaaS businesses. Skilled in creating comprehensive, user-friendly documentation that educates and empowers readers. Proven ability to integrate customizations and maintain a seamless user experience across various Help Center or Knowledge Base platforms.",
@@ -25,28 +25,10 @@
         "network": "GitHub",
         "username": "mtthwnestor",
         "url": "https://github.com/mtthwnestor"
-      },
-      {
-        "network": "GitLab",
-        "username": "matt",
-        "url": "https://gitlab.piperservers.net/matt"
       }
     ]
   },
   "work": [
-    {
-      "name": "McDonalds (JMC Hospitality)",
-      "position": "Shift Manager",
-      "startDate": "2025-04-11",
-      "endDate": "",
-      "highlights": [
-        "Ensure all procedures are followed, including critical food safety, cleanliness, Hospitality, and service.",
-        "Train, coach, and coordinate employees to reach store goals."
-      ],
-      "summary": "During my time at McDonalds I ensured food safety, quality, and service goals were reached. This role required me to delegate tasks and maintain overall store efficiency.",
-      "url": "https://www.mcdonalds.com/",
-      "location": "Lansing, Michigan"
-    },
     {
       "name": "Outlier AI",
       "description": "An AI training platform.",

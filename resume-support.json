@@ -4,7 +4,7 @@
     "name": "Madison Nestor",
     "label": "Customer Communications Expert",
     "image": "photo.jpg",
-    "email": "mtthwnestor@gmail.com",
+    "email": "mendoza.madison.n@gmail.com",
     "phone": "+1 (253) 632-0664",
     "url": "https://mtthwnestor.github.io/",
     "summary": "Highly detail-oriented technical support specialist with experience in IT and SaaS businesses. Skilled in creative problem solving, crafting user-friendly instructions, and meeting critical deadlines.",
@@ -34,19 +34,6 @@
     ]
   },
   "work": [
-    {
-      "name": "McDonalds (JMC Hospitality)",
-      "position": "Shift Manager",
-      "startDate": "2025-04-11",
-      "endDate": "",
-      "highlights": [
-        "Ensure all procedures are followed, including critical food safety, cleanliness, Hospitality, and service.",
-        "Train, coach, and coordinate employees to reach store goals."
-      ],
-      "summary": "During my time at McDonalds I ensured food safety, quality, and service goals were reached. This role required me to delegate tasks and maintain overall store efficiency.",
-      "url": "https://www.mcdonalds.com/",
-      "location": "Lansing, Michigan"
-    },
     {
       "name": "Outlier AI",
       "description": "An AI training platform.",

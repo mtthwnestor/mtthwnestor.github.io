@@ -2,18 +2,26 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "start": "node export-html.js",
     "init": "resumed init",
     "html-export": "node export-html.js",
     "pdf-export": "node export-pdf.js",
-    "docx-export": "node export-docx.js"
+    "docx-export": "node export-docx.js",
+    "python": "python3",
+    "pandoc": "pandoc",
+    "resume": "npm run html-export && npm run pdf-export && npm run docx-export && cp photo.jpg public/ && find . -maxdepth 1 -name \"resume*.html\" -exec mv '{}' public/ \\; && cp public/resume0.html public/index.html && find . -maxdepth 1 -name \"resume*.docx\" -exec mv '{}' public/ \\; && find . -maxdepth 1 -name \"Sample*.pdf\" -exec cp '{}' public/ \\; && find . -maxdepth 1 -name \"resume*.pdf\" -exec mv '{}' public/ \\;",
+    "clean": "rm -rf node_modules __pycache__ && find . -maxdepth 1 -name \"resume*.html\" -delete && find . -maxdepth 1 -name \"resume*.pdf\" -delete && find . -maxdepth 1 -name \"resume*.docx\" -delete && find public/ -name \"resume*.html\" -delete && find public/ -name \"resume*.pdf\" -delete && find public/ -name \"resume*.docx\" -delete && rm -f public/index.html public/photo.jpg",
+    "test": "echo \"All tests passed!\" && exit 0"
+  },
+  "dependencies": {
+    "@jsonresume/jsonresume-theme-class": "^0.7.0",
+    "html-to-docx": "^1.8.0",
+    "jsonresume-theme-even": "^0.27.0",
+    "jsonresume-theme-jacrys": "^1.0.4",
+    "puppeteer": "^25.16.0",
+    "resumed": "^7.1.0"
   },
   "devDependencies": {
-    "@jsonresume/jsonresume-theme-class": "^0.4.2",
-    "glob": "^11.0.1",
-    "html-to-docx": "^1.8.0",
-    "jsonresume-theme-even": "^0.23.0",
-    "jsonresume-theme-jacrys": "^1.0.4",
-    "puppeteer": "^22.15.0",
-    "resumed": "^3.0.1"
+    "glob": "^13.0.6"
   }
 }

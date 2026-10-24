@@ -1,0 +1,36 @@
+{
+  "name": "Resume Project",
+  "version": "0.0.1",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.python",
+        "saoudrizwan.claude-dev",
+        "streetsidesoftware.code-spell-checker",
+        "Continue.continue",
+        "Ollama.ollama",
+        "ms-python.vscode-pylance",
+        "ms-python.debugpy",
+        "redhat.vscode-yaml",
+        "github.vscode-github-actions",
+        "DavidAnson.vscode-markdownlint"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.bracketPairColorizer.enabled": true
+      }
+    }
+  },
+  "remoteEnv": {
+    "NODE_ENV": "development"
+  },
+  "mounts": ["source=${localWorkspaceFolder},target=/app,type=bind"],
+  "postCreateCommand": "npm install"
+}

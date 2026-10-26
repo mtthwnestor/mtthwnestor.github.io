@@ -18,10 +18,13 @@
     "html-to-docx": "^1.8.0",
     "jsonresume-theme-even": "^0.27.0",
     "jsonresume-theme-jacrys": "^1.0.4",
-    "puppeteer": "^25.16.0",
-    "resumed": "^7.1.0"
+    "puppeteer": "^25.16.0"
   },
   "devDependencies": {
-    "glob": "^13.0.6"
+    "@jsonresume/ats-validator": "^0.3.0",
+    "@jsonresume/schema": "^1.7.0",
+    "glob": "^13.0.6",
+    "json-merge-patch": "^1.0.2",
+    "resumed": "^7.1.0"
   }
 }

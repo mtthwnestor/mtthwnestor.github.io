@@ -1,28 +1,33 @@
 import { promises as fs } from "fs";
 import * as path from "path";
-import { cwd } from "process";
+import * as glob from "glob";
+import JSONMergePatch from "json-merge-patch";
 import { render } from "resumed";
-import * as theme_main from "jsonresume-theme-jacrys";
 import * as theme_ats from "@jsonresume/jsonresume-theme-class";
+import * as theme_main from "jsonresume-theme-jacrys";
 
-const themes = [theme_main, theme_ats];
-const resume_files = [
-  "resume.json",
-  "resume-writer.json",
-  "resume-support.json",
-  "resume-retail.json",
-];
+const themes = [theme_ats, theme_main];
 
-for (const resume of resume_files) {
-  const jsonresume = JSON.parse(await fs.readFile(resume, "utf-8"));
+const json_patches = glob.sync("resume-*.json");
 
-  let theme_num = 0;
-  for (const theme of themes) {
-    const htmlresume = await render(jsonresume, theme);
+for (const theme of themes) {
+  // Read, render and write our main resume.
+  const json_base = JSON.parse(await fs.readFile("resume.json", "utf-8"));
+  const base_resume = await render(json_base, theme);
+  const filename = "resume" + themes.indexOf(theme) + ".html";
+  await fs.writeFile(filename, base_resume);
 
-    const filename = path.parse(resume).name;
-    await fs.writeFile(filename + theme_num + ".html", htmlresume);
+  // Apply patches, render, and write variants.
+  for (const json_patch of json_patches) {
+    const json_base = JSON.parse(await fs.readFile("resume.json", "utf-8"));
+    const json_patched = JSONMergePatch.apply(
+      json_base,
+      JSON.parse(await fs.readFile(json_patch, "utf-8")),
+    );
 
-    theme_num = theme_num + 1;
+    const patched_resume = await render(json_patched, theme);
+    const filename =
+      path.parse(json_patch).name + themes.indexOf(theme) + ".html";
+    await fs.writeFile(filename, patched_resume);
   }
 }

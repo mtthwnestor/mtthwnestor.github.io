@@ -1,33 +1,24 @@
-import * as fs from 'fs';
+import { promises as fs } from "fs";
+import * as path from "path";
+import * as glob from "glob";
 import HTMLtoDOCX from "html-to-docx";
 
+const html_files = glob.sync("resume*.html");
 
-let html = ""
-try {
-    html = fs.readFileSync('./index.html', 'utf8');
-} catch (err) {
-    console.error(err);
-}
-const outputPath = "./resume.docx";
-
-const htmlString = html;
 const documentOptions = {
-    title: "Matthew Nestor",
-    creator: "Matthew Nestor",
-    keywords: ["resume", "cv"],
-    description: "Matthew Nestor's CV.",
-    font: "sans-serif",
-    fontSize: 24
+  title: "Madison Nestor",
+  creator: "Madison Nestor",
+  keywords: ["resume", "cv"],
+  description: "Madison Nestor's CV.",
+  font: "sans-serif",
+  fontSize: 24,
 };
 
-(async () => {
-    const fileBuffer = await HTMLtoDOCX(htmlString, null, documentOptions);
+for (const html_file of html_files) {
+  const html_resume = await fs.readFile(html_file, "utf8");
 
-    fs.writeFile(outputPath, fileBuffer, (error) => {
-        if (error) {
-            console.log('Docx file creation failed');
-            return;
-        }
-        console.log('Docx file created successfully');
-    });
-})();
+  const docx_resume = await HTMLtoDOCX(html_resume, null, documentOptions);
+
+  const filename = path.parse(html_file).name + ".docx";
+  await fs.writeFile(filename, docx_resume);
+}

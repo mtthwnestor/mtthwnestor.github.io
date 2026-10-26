@@ -35,7 +35,7 @@ Be sure to add your keys to the agent with e.g. `ssh-add ~/.ssh/id_ed25519`.
 
 ## CLI
 
-The environment is set up with `resumed`, a community alternative to the official `resume-cli`:
+The environment is set up with `resumed`, a lightweight community alternative to the official `resume-cli`:
 
 ```bash
 npm install --save-dev resumed jsonresume-theme-even
@@ -45,7 +45,7 @@ npx resumed --theme jsonresume-theme-even
 ## Updating
 
 1. To update the **Dev Container/Docker image** change the `FROM` property in `.devcontainer/Dockerfile`, if needed, and rebuild the container.
-1. To update `resumed`, `puppeteer`, and other NodeJS dependencies run `npm update` within the container.
+1. To update `resumed`, `puppeteer`, and other **NodeJS packages**, run `npm update` within the container.
 1. Lastly, update `.github/workflows/gh-pages.yml` with an up-to-date runner, e.g. `ubuntu-26.04` and updated GitHub Workflow Actions versions and settings, e.g. `actions/setup-node@v7` with `node-version: "24"`.
 
 ## References

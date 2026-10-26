@@ -1,16 +1,17 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "$schema": "https://raw.githubusercontent.com/jsonresume/jsonresume.org/master/packages/schema/schema.json",
   "basics": {
     "name": "Madison Nestor",
+    "pronouns": "she/her",
     "label": "Technical Communications Expert",
     "image": "photo.jpg",
-    "email": "mendoza.madison.n@gmail.com",
+    "email": "madison@kf8hjz.net",
     "phone": "+1 (253) 632-0664",
-    "url": "https://mtthwnestor.github.io/",
-    "summary": "Highly detail-oriented technical writer with experience in developing and implementing documentation workflows for SaaS businesses. Skilled in creating comprehensive, user-friendly documentation that educates and empowers readers. Proven ability to integrate customizations and maintain a seamless user experience across various Help Center or Knowledge Base platforms.",
+    "url": "https://www.kf8hjz.net/",
+    "summary": "Highly detail-oriented technical writer with experience in developing and implementing documentation workflows for businesses. Skilled in creating comprehensive, user-friendly documentation that educates and empowers readers. Proven ability to integrate customizations and maintain a seamless user experience across various Help Center or Knowledge Base platforms.",
     "location": {
       "address": "210 S Clemens Ave",
-      "postalCode": "MI 48912",
+      "postalCode": "48912",
       "city": "Lansing",
       "countryCode": "US",
       "region": "Michigan"
@@ -18,40 +19,40 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "mtthwnestor",
-        "url": "https://www.linkedin.com/in/mtthwnestor/"
+        "username": "kf8hjz",
+        "url": "https://www.linkedin.com/in/kf8hjz"
       },
       {
         "network": "GitHub",
         "username": "mtthwnestor",
         "url": "https://github.com/mtthwnestor"
+      },
+      {
+        "network": "Mastodon",
+        "username": "kf8hjz",
+        "url": "https://mastodon.radio/@kf8hjz"
       }
     ]
   },
+  "objective": "Provide world-class technical expertise to businesses and users.",
   "work": [
     {
-      "name": "Taco Bell",
+      "name": "Taco Bell (Team Lyders)",
       "position": "Crew Member",
-      "startDate": "2025-04-11",
+      "startDate": "2025-09-02",
       "endDate": "",
-      "highlights": [
-        "Ensure all procedures are followed, including critical food safety, cleanliness, Hospitality, and service.",
-        "Train and support employees to reach store goals."
-      ],
-      "summary": "During my time at Taco Bell I ensured food safety, quality, and service goals were reached. This role required me to adapt in order to maintain overall store efficiency.",
+      "highlights": [],
+      "summary": null,
       "url": "https://www.tacobell.com/",
       "location": "Lansing, Michigan"
     },
     {
-      "name": "McDonalds (JMC Hospitality)",
+      "name": "McDonald's (JMC Hospitality)",
       "position": "Shift Manager",
       "startDate": "2025-04-11",
-      "endDate": "",
-      "highlights": [
-        "Ensure all procedures are followed, including critical food safety, cleanliness, Hospitality, and service.",
-        "Train, coach, and coordinate employees to reach store goals."
-      ],
-      "summary": "During my time at McDonalds I ensured food safety, quality, and service goals were reached. This role required me to delegate tasks and maintain overall store efficiency.",
+      "endDate": "2025-09-01",
+      "highlights": [],
+      "summary": null,
       "url": "https://www.mcdonalds.com/",
       "location": "Lansing, Michigan"
     },
@@ -91,9 +92,9 @@
       "name": "ClickFunnels",
       "position": "Technical Support Specialist",
       "startDate": "2021-09-23",
-      "endDate": "2022-10-31",
+      "endDate": "2022-07-30",
       "highlights": [
-        "Provide world-class technical support for a SaaS platform to various entrepreneurs of varying skill levels."
+        "Provide world-class technical support for a SaaS platform to various entrepreneurs of differing skill levels."
       ],
       "summary": null,
       "url": "https://www.clickfunnels.com/",
@@ -116,11 +117,22 @@
       "location": "Lansing, Michigan"
     },
     {
+      "name": "Meijer",
+      "description": "A Midwestern American retail chain.",
+      "position": "Cashier, customer service, etc.",
+      "startDate": "2017-08-02",
+      "endDate": "2018-02-28",
+      "highlights": [],
+      "summary": null,
+      "url": "https://www.meijer.com/",
+      "location": "Lansing, Michigan"
+    },
+    {
       "name": "Jurassic Quest",
       "description": "A traveling dinosaur exhibit.",
       "position": "Electrical and IT",
       "startDate": "2016-05-31",
-      "endDate": "2017-02-28",
+      "endDate": "2017-03-28",
       "highlights": [
         "Set up, configure, and troubleshoot wireless networks, computers, and devices, ensuring smooth operation of life-size animatronics and attractions.",
         "Build and maintain an educational trivia game with a Raspberry Pi using GPIO, Bash, Python, HTML, CSS, and JavaScript."
@@ -128,14 +140,30 @@
       "summary": null,
       "url": "https://www.jurassicquest.com/",
       "location": "Travel"
+    },
+    {
+      "name": "Burger King Corporation",
+      "position": "Shift Manager",
+      "startDate": "2012-01-31",
+      "endDate": "2016-04-30",
+      "highlights": [],
+      "summary": null,
+      "url": "https://www.bk.com/",
+      "location": "Tacoma, Washington"
     }
   ],
   "volunteer": [],
   "education": [
     {
       "institution": "Decatur High School",
-      "area": "Federal Way",
       "studyType": "High School",
+      "location": {
+        "address": "2800 SW 320th Street",
+        "city": "Federal Way",
+        "region": "Washington",
+        "countryCode": "US",
+        "postalCode": "98023"
+      },
       "url": "https://dhs.fwps.org/",
       "startDate": "2007",
       "endDate": "2011",
@@ -144,14 +172,22 @@
     }
   ],
   "awards": [],
-  "certificates": [],
+  "certificates": [
+    {
+      "name": "Amateur Radio Operator",
+      "issuer": "Federal Communications Commission",
+      "date": "2026-09-22",
+      "expiryDate": "2036-09-22",
+      "credentialId": "KF8HJZ",
+      "url": "https://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=5361116"
+    }
+  ],
   "publications": [],
   "skills": [
     {
       "name": "Technical Writing",
       "level": "Master",
       "keywords": [
-        "SaaS",
         "Help Center",
         "Knowledge Base",
         "Zendesk",
@@ -166,16 +202,11 @@
       "name": "Docs-as-Code",
       "level": "Master",
       "keywords": [
-        "Gatsby",
         "Jekyll",
         "JSX",
         "MDX",
         "YAML",
-        "API",
         "Markdown",
-        "JavaScript",
-        "React",
-        "Liquid",
         "Agile",
         "Microsoft Excel"
       ]
@@ -188,19 +219,13 @@
     {
       "name": "Git",
       "level": "Intermediate",
-      "keywords": [
-        "GitHub",
-        "GitLab",
-        "CI / CD",
-        "Collaboration"
-      ]
+      "keywords": ["GitHub", "GitLab", "CI / CD", "Collaboration", "Automation"]
     },
     {
       "name": "Web Development",
       "level": "Intermediate",
       "keywords": [
         "React",
-        "Liquid",
         "HTML",
         "CSS",
         "Tailwind",
@@ -216,27 +241,21 @@
         "Python",
         "JavaScript",
         "PowerShell",
+        "REST",
         "API",
         "JSON",
-        "Automation"
+        "Node"
       ]
     },
     {
       "name": "DevOps",
       "level": "Master",
-      "keywords": ["Docker", "make", "Bash", "Git", "YAML"]
+      "keywords": ["Docker", "Bash", "Git"]
     },
     {
       "name": "AI",
       "level": "Intermediate",
-      "keywords": [
-        "Artificial Intelligence",
-        "LLM",
-        "RAG",
-        "Ollama",
-        "API",
-        "LangChain"
-      ]
+      "keywords": ["LLM", "RAG", "Ollama"]
     }
   ],
   "languages": [
@@ -248,24 +267,24 @@
   "interests": [
     {
       "name": "Homelab",
-      "keywords": ["Self-hosted", "Networking", "Linux", "Ansible", "Docker"]
+      "keywords": ["Networking", "Ansible"]
     },
     {
       "name": "Open Source",
       "keywords": ["Linux", "GitLab", "Raspberry Pi"]
-    },
-    {
-      "name": "Gaming",
-      "keywords": ["Nvidia", "Steam", "Open Source"]
     }
   ],
   "references": [
     {
-      "name": "Robert Paisley, Documentation Lead Analyst at ClickFunnels",
+      "name": "Robert Paisley",
+      "organization": "ClickFunnels",
+      "relationship": "Documentation Lead Analyst",
       "reference": "Madison is constantly looking to improve herself and the team by learning and sharing skills that benefit us all."
     },
     {
-      "name": "Laura Demetrious, Communications Manager at ClickFunnels",
+      "name": "Laura Demetrious",
+      "organization": "ClickFunnels",
+      "relationship": "Communications Manager",
       "reference": "Madison does a stellar job of staying on top of new functionalities that are otherwise complex for the average user."
     }
   ],
@@ -276,18 +295,24 @@
       "entity": "ClickFunnels",
       "startDate": "2024-01-01",
       "endDate": "2024-05-17",
-      "description": "ClickFunnels Help Center content.",
+      "summary": "ClickFunnels Help Center content.",
       "roles": ["Project Lead", "Writer"],
       "highlights": [
         "Implemented and trained others to use a docs-as-code workflow."
       ],
-      "keywords": ["Jekyll", "Liquid", "Markdown", "HTML", "CSS", "JavaScript"],
+      "keywords": [
+        "Jekyll",
+        "Liquid",
+        "Markdown",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "API"
+      ],
       "url": "https://www.github.com/mtthwnestor/cf2-docs"
     }
   ],
   "meta": {
-    "version": "v1.0.0",
-    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json",
     "language": "en"
   }
 }

@@ -20,12 +20,7 @@
         "redhat.vscode-yaml",
         "github.vscode-github-actions",
         "DavidAnson.vscode-markdownlint"
-      ],
-      "settings": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true,
-        "editor.bracketPairColorizer.enabled": true
-      }
+      ]
     }
   },
   "remoteEnv": {

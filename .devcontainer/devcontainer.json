@@ -26,6 +26,6 @@
   "remoteEnv": {
     "NODE_ENV": "development"
   },
-  "mounts": ["source=${localWorkspaceFolder},target=/app,type=bind"],
+  "runArgs": ["--env-file", ".devcontainer/.env"],
   "postCreateCommand": "npm install"
 }

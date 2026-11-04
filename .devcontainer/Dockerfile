@@ -22,18 +22,5 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Set the working directory
-WORKDIR /app
-
-# Install npm dependencies
-COPY package.json package-lock.json ./
-RUN npm ci
-
-# Copy the rest of the files
-COPY . .
-
-# Pre-install Puppeteer Chrome
-RUN npx puppeteer browsers install chrome
-
 # Default command
 CMD ["npm", "run", "start"]

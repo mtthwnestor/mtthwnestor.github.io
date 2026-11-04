@@ -290,6 +290,26 @@
   ],
   "projects": [
     {
+      "name": "Resume",
+      "entity": "Self",
+      "startDate": "2024-04-01",
+      "endDate": "",
+      "summary": "JSON Resume data and associated scripts.",
+      "roles": ["Project Lead"],
+      "highlights": [
+        "Utilize JSON Resume schema and JavaScript to generate HTML, PDF, DOCX, and publish a resume."
+      ],
+      "keywords": [
+        "JSON",
+        "JavaScript",
+        "Handlebars",
+        "API",
+        "CI / CD",
+        "Docker"
+      ],
+      "url": "https://www.github.com/mtthwnestor/mtthwnestor.github.io"
+    },
+    {
       "name": "cf2-docs",
       "type": "documentation",
       "entity": "ClickFunnels",
